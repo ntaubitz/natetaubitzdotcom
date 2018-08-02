@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+@import "colors.css.scss";
+@import "fonts.css.scss";
+
+@import "bootstrap/bootstrap.css";
+@import "bootstrap/bootstrap-grid.css";
+@import "bootstrap/bootstrap-reboot.css";
+
+@import "nav.css.scss";

@@ -1,0 +1,17 @@
+@import "colors";
+
+ul.nav {
+  &.main {
+    background-color: #cce5ff;
+    border-bottom: 2px solid #b8daff;
+
+    .nav-item {
+      .nav-link {
+        &.active {
+          background-color: #b8daff;
+          color: $color-black;
+        }
+      }
+    }
+  }
+}
