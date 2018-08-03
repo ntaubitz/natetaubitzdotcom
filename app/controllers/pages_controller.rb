@@ -19,6 +19,16 @@ class PagesController < ApplicationController
     render 'contact'
   end
 
+  # GET /code
+  def code
+
+  end
+
+  # GET /react
+  def react
+
+  end
+
   private
 
   def contact_params

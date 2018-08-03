@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   get '/' => 'pages#overview'
   get '/contact' => 'pages#contact'
   post '/contact' => 'pages#contact_me'
+  get '/code' => 'pages#code'
+  get '/react' => 'pages#react'
 end
