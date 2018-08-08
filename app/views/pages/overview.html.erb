@@ -1,8 +1,43 @@
 <% @active_page = 'overview' %>
+<div class="jumbotron">
+  <div class="container">
+    <h1>welcome</h1>
+    <p>My name is Nate. This is my website. Who knows what it will become.</p>
+  </div>
+</div>
+
 <div class="container">
-  <h2>welcome</h2>
-  <p>My name is Nate. This is my website. Who knows what it will become.</p>
-  <p>You can check out things i like to learn in <a href="/code">technology</a>, or just get a hold of me
-    <a href="/contact">here</a>.
-  </p>
+  <div class="row">
+    <div class="col-md-4">
+      <h2>daily short posts</h2>
+      <p>There's a theme to my daily posts... gratitude.</p>
+      <div class="short-posts">
+        <% $current_user.short_posts.most_recent.each do |post| %>
+          <div class="short-post">
+            <%= post.text %><br/>
+            <small><%= post.created_at.strftime('%a %b %d %Y') %></small>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <h2>code</h2>
+      <p>
+        i have been a full stack developer for years, a professional developer for over 20.
+      </p>
+      <p>
+        i believe in limited on-site office time so that we aren't commuting every day. The commute
+        eats us alive, destroys the planet and hinders creativity. Working from home allows a life balance and extra time
+        to devote to passion.
+      </p>
+      <p>
+        My passion is delivering amazing technology through collaborative software
+        development.
+        <p><a class="btn btn-default" href="/code" role="button">learn more &raquo;</a></p>
+      </p>
+    </div>
+    <div class="col-md-4">
+      &nbsp;
+    </div>
+  </div>
 </div>

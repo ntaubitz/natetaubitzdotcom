@@ -1,20 +1,31 @@
 @import "colors";
 
-ul.nav {
-  &.main {
-    background-color: #cce5ff;
-    border-bottom: 2px solid #b8daff;
+nav.navbar {
 
-    .nav-item {
-      .nav-link {
-        &.active {
-          background-color: #b8daff;
-          color: $color-black;
+  .container-fluid {
+    background-color: $color-light-blue;
+    border-bottom: 2px solid $color-medium-blue;
+    .navbar-header {
+
+      .navbar-brand {
+        .logo {
+          width: 31px;
+          margin: -5px 0 0 -5px;
         }
       }
-      .logo {
-        width: 31px;
-        margin: 5px 0 0 5px;
+    }
+    ul.nav {
+      &.navbar-nav {
+        li {
+          &.active {
+            background-color: $color-medium-blue;
+            a {
+              background: none;
+            }
+          }
+          a {
+          }
+        }
       }
     }
   }
