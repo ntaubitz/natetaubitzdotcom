@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b36d2c6-fdb1-463b-9404-cd3ba051123a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/pages_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/pages_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/pages/code.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/pages/code.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/pages/react.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-    </list>
+    <list default="true" id="1b36d2c6-fdb1-463b-9404-cd3ba051123a" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -39,7 +33,7 @@
         <entry file="file://$PROJECT_DIR$/app/views/pages/code.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+              <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -410,12 +404,12 @@
       <workItem from="1533577116625" duration="1256000" />
       <workItem from="1533738154693" duration="6686000" />
       <workItem from="1533752038563" duration="6280000" />
-      <workItem from="1533837632013" duration="253000" />
+      <workItem from="1533837632013" duration="969000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16733000" />
+    <option name="totallyTimeSpent" value="17449000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1283" height="1412" extended-state="0" />
@@ -768,7 +762,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/pages/code.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
         </state>
       </provider>
     </entry>
