@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   get '/contact' => 'pages#contact'
   post '/contact' => 'pages#contact_me'
   get '/code' => 'pages#code'
-  get '/react' => 'pages#react'
 
   resources :short_posts
 end

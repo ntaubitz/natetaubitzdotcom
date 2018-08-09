@@ -24,11 +24,6 @@ class PagesController < ApplicationController
 
   end
 
-  # GET /react
-  def react
-
-  end
-
   private
 
   def contact_params
