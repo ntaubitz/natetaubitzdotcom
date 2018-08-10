@@ -8,6 +8,19 @@ class User < ApplicationRecord
   before_save :encrypt_password
 
   has_many :short_posts
+  has_and_belongs_to_many :groups, join_table: :user_groups
 
   scope :by_email, -> (email) {where(email: email)}
+
+  def can?(permission)
+    permissions.include? permission
+  end
+
+  private
+
+  def permissions
+    perms = []
+    groups.each{|g| perms += g.permissions.collect{|p| p.name.to_sym}}
+    perms
+  end
 end
