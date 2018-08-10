@@ -12,7 +12,7 @@
       <h2>daily short posts</h2>
       <p>There's a theme to my daily posts... gratitude.</p>
       <div class="short-posts">
-        <% $current_user.short_posts.most_recent.each do |post| %>
+        <% User.find(Natetaubitzdotcom::Application.config.anonymous_user_id).short_posts.most_recent.each do |post| %>
           <div class="short-post">
             <%= post.text %><br/>
             <small><%= post.created_at.strftime('%a %b %d %Y') %></small>

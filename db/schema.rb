@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_08_104900) do
+ActiveRecord::Schema.define(version: 2018_08_10_094400) do
 
   create_table "short_posts", id: :integer, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.integer "user_id"
@@ -24,6 +24,8 @@ ActiveRecord::Schema.define(version: 2018_08_08_104900) do
     t.string "email", limit: 64
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "salt"
+    t.string "crypted_password"
   end
 
 end

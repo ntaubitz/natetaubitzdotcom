@@ -21,8 +21,12 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  <<: *default
-  database: db/test.sqlite3
+  adapter: mysql2
+  encoding: utf8
+  host: 127.0.0.1
+  username: ntaubitz
+  password: N@t3 W3bz
+  database: natetaubitzdotcom_test
 
 production:
   <<: *default

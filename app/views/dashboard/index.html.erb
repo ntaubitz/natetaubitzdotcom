@@ -1,0 +1,28 @@
+<% @active_page = 'dashboard' %>
+
+<div class="container">
+  <h1>dashboard</h1>
+  <div class="row">
+    <div class="col col-sm-12 col-md-6">
+      <% @alerts.each do |alert| %>
+        <div class="alert alert-<%= alert[:type] %>" role="alert">
+          <strong><%= alert[:title]%></strong> <%= alert[:text]%>.
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <h2>short posts</h2>
+  <%= form_tag('/dashboard/create_short_post', name: 'short_posts') do %>
+    <div class="row">
+      <div class="col col-sm-12 col-md-3">
+        <div class="form-group">
+          <label for="post">post</label>
+          <input type="text" class="form-control" id="post" name="post" placeholder="all things wonderful">
+        </div>
+      </div>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  <% end %>
+</div>

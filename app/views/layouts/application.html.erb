@@ -67,13 +67,26 @@
             <li class="<%= 'active' if @active_page == 'overview' %>">
               <a href="/">overview</a>
             </li>
+            <% unless current_user.nil? %>
+            <li class="<%= 'active' if @active_page == 'dashboard' %>">
+              <a href="/dashboard">dashboard</a>
+            </li>
+            <% end %>
             <li class="<%= 'active' if @active_page == 'code' %>">
               <a href="/code">code</a>
             </li>
             <li class="<%= 'active' if @active_page == 'contact' %>">
               <a href="/contact">contact</a>
             </li>
+
           </ul>
+          <% unless current_user.nil? %>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/logout">logout</a>
+            </li>
+          </ul>
+          <% end %>
         </div>
       </div>
     </nav>

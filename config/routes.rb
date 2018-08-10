@@ -4,6 +4,11 @@ Rails.application.routes.draw do
   get '/contact' => 'pages#contact'
   post '/contact' => 'pages#contact_me'
   get '/code' => 'pages#code'
+  get '/login' => 'pages#login'
+  post '/login' => 'pages#authenticate'
+  get '/logout' => 'pages#logout'
+  get '/dashboard' => 'dashboard#index'
+  post '/dashboard/create_short_post' => 'dashboard#create_short_post'
 
   resources :short_posts
 end

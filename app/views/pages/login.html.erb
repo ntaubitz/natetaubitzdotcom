@@ -1,0 +1,34 @@
+<% @active_page = 'contact' %>
+
+<div class="container">
+  <h1>login</h1>
+  <%= form_tag('/login', name: 'login') do %>
+    <div class="row">
+      <div class="col col-sm-12 col-md-3">
+        <div class="form-group">
+          <label for="email">email</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="you@me.com">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-sm-12 col-md-3">
+        <div class="form-group">
+          <label for="password">password</label>
+          <input type="password" class="form-control" id="password" name="password">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col-sm-12 col-md-3">
+        <% @errors.each do |error| %>
+          <div class="alert alert-danger" role="alert">
+            <strong>Oh snap!</strong> <%= error[error.keys.first] %>.
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  <% end %>
+</div>

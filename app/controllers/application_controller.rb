@@ -1,9 +1,7 @@
 class ApplicationController < ActionController::Base
-  before_action :set_user
+  include Authentication
 
-  def current_user
-    $current_user
-  end
+  helper_method :current_user
 
   def paginate(things, serializer=nil)
     page = params.fetch(:page, 1).to_i
@@ -34,11 +32,5 @@ class ApplicationController < ActionController::Base
     data[:num_results] = data[:objects].count
 
     render json: data
-  end
-
-  private
-
-  def set_user
-    $current_user = User.find(1)
   end
 end
