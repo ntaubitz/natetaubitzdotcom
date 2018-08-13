@@ -1,7 +1,16 @@
 class PagesController < ApplicationController
   # GET /
   def overview
+    @most_recent_blog_post = BlogPost.most_recent.first
+  end
 
+  # GET /blog
+  def blog
+    if params[:blog_post_id].blank?
+      params[:blog_post_id] = anonymous_user.blog_posts.most_recent.first.id
+    end
+
+    @active_blog_post = BlogPost.find params[:blog_post_id]
   end
 
   # GET /contact

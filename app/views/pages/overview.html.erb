@@ -12,7 +12,7 @@
       <h2>daily short posts</h2>
       <p>There's a theme to my daily posts... gratitude.</p>
       <div class="short-posts">
-        <% User.find(Natetaubitzdotcom::Application.config.anonymous_user_id).short_posts.most_recent.each do |post| %>
+        <% anonymous_user.short_posts.most_recent.each do |post| %>
           <div class="short-post">
             <%= post.text %><br/>
             <small><%= post.created_at.strftime('%a %b %d %Y') %></small>
@@ -37,7 +37,13 @@
       </p>
     </div>
     <div class="col-md-4">
-      &nbsp;
+      <h2>blog</h2>
+
+      <%= @most_recent_blog_post.short_markup.html_safe %>
+      <small>Posted: <%= @most_recent_blog_post.created_at.strftime('%B %d %Y') %></small>
+      <br/>
+      <br/>
+      <p><a class="btn btn-default" href="/blog?blog_post_id=<%= @most_recent_blog_post.id %>" role="button">read more &raquo;</a></p>
     </div>
   </div>
 </div>

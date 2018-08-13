@@ -1,0 +1,19 @@
+<% @active_page = 'blog' %>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2 d-none d-md-block">
+      <div class="list-group">
+        <% anonymous_user.blog_posts.most_recent.each do |post| %>
+          <a href="<%= "#{host_url}/blog?blog_post_id=#{post.id}" %>"
+             class="list-group-item <%= post.id == @active_blog_post.id ? 'active' : '' %>">
+            <i class="fa fa-comment-o"></i> <%= post.subject %>
+          </a>
+        <% end %>
+      </div>
+    </div>
+    <div class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      <%= @active_blog_post.markup.html_safe %>
+      <small>Posted: <%= @active_blog_post.created_at.strftime('%B %d %Y') %></small>
+    </div>
+  </div>
+</div>

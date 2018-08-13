@@ -25,4 +25,25 @@
 
     <button type="submit" class="btn btn-primary">Submit</button>
   <% end %>
+  <h2>blog posts</h2>
+  <%= form_tag('/dashboard/create_blog_post', name: 'blog_posts') do %>
+    <div class="row">
+      <div class="col col-sm-12 col-md-3">
+        <div class="form-group">
+          <label for="post">subject</label>
+          <input type="text" class="form-control" id="subject" name="subject" placeholder="subject">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-sm-12 col-md-6">
+        <div class="form-group">
+          <label for="markup">subject</label>
+          <textarea class="form-control" rows="20" id="markup" name="markup" placeholder="markup"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  <% end %>
 </div>

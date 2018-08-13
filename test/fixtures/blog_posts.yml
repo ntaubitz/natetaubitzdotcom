@@ -1,0 +1,14 @@
+short:
+  user: nate
+  subject: short post
+  markup: <h1>short post</h1><p>not truncated</p>
+
+long_one_tag:
+  user: nate
+  subject: long post
+  markup: <h1>long post</h1><p>truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me.  truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me. truncate me.</p>
+
+long_multiple_tags:
+  user: nate
+  subject: long post
+  markup: <h1>long post</h1><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p>

@@ -30,3 +30,15 @@ nav.navbar {
     }
   }
 }
+
+.list-group {
+  .list-group-item {
+    &.active {
+      color: $color-black;
+      background-color: $color-light-blue;
+      background-image: none;
+      border-color: $color-medium-blue;
+      text-shadow: none;
+    }
+  }
+}

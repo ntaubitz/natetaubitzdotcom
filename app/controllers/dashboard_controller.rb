@@ -27,6 +27,29 @@ class DashboardController < ApplicationController
     render 'index'
   end
 
+  def create_blog_post
+    if blog_post_params[:subject].blank? || blog_post_params[:markup].blank?
+      @alerts << {
+        type: :danger,
+        title: 'Oh Snap!',
+        text: "please supply some bloggness"
+      }
+    else
+      BlogPost.new(
+        user: current_user,
+        subject: blog_post_params[:subject],
+        markup: blog_post_params[:markup]
+      ).save
+      @alerts << {
+        type: :success,
+        title: 'done!',
+        text: "you are thankful for posting #{blog_post_params[:subject]}"
+      }
+    end
+
+    render 'index'
+  end
+
   private
 
   def set_alerts
@@ -41,5 +64,9 @@ class DashboardController < ApplicationController
 
   def short_post_params
     params.permit(:post)
+  end
+
+  def blog_post_params
+    params.permit(:subject, :markup)
   end
 end

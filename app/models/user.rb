@@ -8,6 +8,7 @@ class User < ApplicationRecord
   before_save :encrypt_password
 
   has_many :short_posts
+  has_many :blog_posts
   has_and_belongs_to_many :groups, join_table: :user_groups
 
   scope :by_email, -> (email) {where(email: email)}

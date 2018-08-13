@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   include Authentication
 
-  helper_method :current_user
+  helper_method :current_user, :anonymous_user, :host_url
 
   def paginate(things, serializer=nil)
     page = params.fetch(:page, 1).to_i
@@ -33,4 +33,9 @@ class ApplicationController < ActionController::Base
 
     render json: data
   end
+
+  def host_url
+    Natetaubitzdotcom::Application.config.host_url
+  end
+
 end
