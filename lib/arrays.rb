@@ -17,10 +17,10 @@ class Arrays
     a_len ||= a.count - 1
     b_len ||= b.count - 1
     c ||= Array.new(a_len+b_len+1)
-    puts "call: c #{c.inspect} ai: #{a_index} bi: #{b_index}, len #{len} flag #{flag}"
+    # puts "call: c #{c.inspect} ai: #{a_index} bi: #{b_index}, len #{len} flag #{flag}"
     if flag
       if len > 0
-        puts "result found #{c[0..len]}"
+        # puts "result found #{c[0..len]}"
         results << c[0..len]
       end
 

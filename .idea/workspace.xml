@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b36d2c6-fdb1-463b-9404-cd3ba051123a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/arrays.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/arrays_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dates.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/models/dates_test.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/arrays.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/arrays.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -21,6 +22,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/natetaubitzdotcom@test_password_is_crypted__natetaubitzdotcom.rcov" NAME="test_password_is_crypted: natetaubitzdotcom Coverage Results" MODIFIED="1533909858606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="natetaubitzdotcom" />
+    <SUITE FILE_PATH="coverage/natetaubitzdotcom@test_year_ranges_are_created__natetaubitzdotcom.rcov" NAME="test_year_ranges_are_created: natetaubitzdotcom Coverage Results" MODIFIED="1534359380282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="natetaubitzdotcom" />
     <SUITE FILE_PATH="coverage/natetaubitzdotcom@test_a_long_blog_post_is_truncated__natetaubitzdotcom.rcov" NAME="test_a_long_blog_post_is_truncated: natetaubitzdotcom Coverage Results" MODIFIED="1534173441902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="natetaubitzdotcom" />
     <SUITE FILE_PATH="coverage/natetaubitzdotcom@Development__natetaubitzdotcom.rcov" NAME="Development: natetaubitzdotcom Coverage Results" MODIFIED="1534180579371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="natetaubitzdotcom" />
     <SUITE FILE_PATH="coverage/natetaubitzdotcom@test_a_long_blog_post_with_multiple_tags_has_just_the_first_tag__natetaubitzdotcom.rcov" NAME="test_a_long_blog_post_with_multiple_tags_has_just_the_first_tag: natetaubitzdotcom Coverage Results" MODIFIED="1534176511271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="natetaubitzdotcom" />
@@ -43,17 +45,53 @@
       <file leaf-file-name="arrays.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/arrays.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="37" column="24" lean-forward="true" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+            <state relative-caret-position="391">
+              <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="arrays_test.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/models/arrays_test.rb">
+      <file leaf-file-name="database.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+              <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dates.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/dates.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dates_test.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/models/dates_test.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user_test.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/models/user_test.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="5" selection-end-line="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="arrays_test.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/models/arrays_test.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -62,7 +100,7 @@
         <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.4@global/gems/minitest-5.11.3/lib/minitest/test.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="457">
-              <caret line="112" column="36" lean-forward="true" selection-start-line="112" selection-start-column="36" selection-end-line="112" selection-end-column="36" />
+              <caret line="200" selection-start-line="200" selection-end-line="200" />
             </state>
           </provider>
         </entry>
@@ -70,17 +108,8 @@
       <file leaf-file-name="minitest.rb" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.4@global/gems/minitest-5.11.3/lib/minitest.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="276" column="6" lean-forward="true" selection-start-line="276" selection-start-column="6" selection-end-line="276" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blog.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/pages/blog.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+            <state relative-caret-position="4692">
+              <caret line="276" column="6" selection-start-line="276" selection-start-column="6" selection-end-line="276" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -90,33 +119,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="2" column="44" selection-end-line="2" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/dashboard/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="overview.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/pages/overview.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nav.css.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/nav.css.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
@@ -145,8 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lib/some_model.rb" />
-        <option value="$PROJECT_DIR$/test/models/some_model_test.rb" />
         <option value="$PROJECT_DIR$/app/models/post.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180808104900_create_short_post.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180808104500_create_users.rb" />
@@ -194,8 +194,10 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/nav.css.scss" />
         <option value="$PROJECT_DIR$/app/views/pages/blog.html.erb" />
         <option value="$PROJECT_DIR$/app/views/dashboard/index.html.erb" />
-        <option value="$PROJECT_DIR$/lib/arrays.rb" />
         <option value="$PROJECT_DIR$/test/models/arrays_test.rb" />
+        <option value="$PROJECT_DIR$/lib/arrays.rb" />
+        <option value="$PROJECT_DIR$/test/models/dates_test.rb" />
+        <option value="$PROJECT_DIR$/lib/dates.rb" />
       </list>
     </option>
   </component>
@@ -228,7 +230,6 @@
     </navigator>
     <panes>
       <pane id="RailsProjectView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -278,6 +279,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -305,7 +307,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.test_all_possible_sorted_arrays_are_returned: natetaubitzdotcom">
+  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.test_year_ranges_are_created: natetaubitzdotcom">
     <configuration name="Development: natetaubitzdotcom" type="RailsRunConfigurationType" factoryName="Rails">
       <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
       <module name="natetaubitzdotcom" />
@@ -443,35 +445,6 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
     </configuration>
-    <configuration name="test_a_long_blog_post_with_one_long_tag_has_truncated_text: natetaubitzdotcom" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
-      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
-      <module name="natetaubitzdotcom" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift) -Itest" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/models/blog_post_test.rb" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_a_long_blog_post_with_one_long_tag_has_truncated_text" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
-    </configuration>
     <configuration name="test_all_possible_sorted_arrays_are_returned: natetaubitzdotcom" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="natetaubitzdotcom" />
@@ -530,24 +503,53 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
     </configuration>
+    <configuration name="test_year_ranges_are_created: natetaubitzdotcom" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+      <module name="natetaubitzdotcom" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift) -Itest" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/models/dates_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_year_ranges_are_created" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+    </configuration>
     <list>
       <item itemvalue="Rake.test: natetaubitzdotcom" />
       <item itemvalue="Rake.spec: natetaubitzdotcom" />
       <item itemvalue="Rails.Production: natetaubitzdotcom" />
       <item itemvalue="Rails.Development: natetaubitzdotcom" />
       <item itemvalue="Test::Unit/Shoulda/Minitest.test_a_long_blog_post_with_multiple_tags_has_just_the_first_tag: natetaubitzdotcom" />
-      <item itemvalue="Test::Unit/Shoulda/Minitest.test_a_long_blog_post_with_one_long_tag_has_truncated_text: natetaubitzdotcom" />
       <item itemvalue="Test::Unit/Shoulda/Minitest.test_foo: natetaubitzdotcom" />
       <item itemvalue="Test::Unit/Shoulda/Minitest.test_all_possible_sorted_arrays_are_returned: natetaubitzdotcom" />
       <item itemvalue="Ruby.test" />
+      <item itemvalue="Test::Unit/Shoulda/Minitest.test_year_ranges_are_created: natetaubitzdotcom" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Test::Unit/Shoulda/Minitest.test_year_ranges_are_created: natetaubitzdotcom" />
         <item itemvalue="Test::Unit/Shoulda/Minitest.test_all_possible_sorted_arrays_are_returned: natetaubitzdotcom" />
         <item itemvalue="Ruby.test" />
         <item itemvalue="Test::Unit/Shoulda/Minitest.test_foo: natetaubitzdotcom" />
         <item itemvalue="Test::Unit/Shoulda/Minitest.test_a_long_blog_post_with_multiple_tags_has_just_the_first_tag: natetaubitzdotcom" />
-        <item itemvalue="Test::Unit/Shoulda/Minitest.test_a_long_blog_post_with_one_long_tag_has_truncated_text: natetaubitzdotcom" />
       </list>
     </recent_temporary>
   </component>
@@ -570,26 +572,12 @@
       <workItem from="1533837632013" duration="12177000" />
       <workItem from="1534109635702" duration="3003000" />
       <workItem from="1534168172197" duration="91000" />
-      <workItem from="1534170926916" duration="15397000" />
+      <workItem from="1534170926916" duration="16714000" />
+      <workItem from="1534358199089" duration="1453000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test_all_possible_sorted_arrays_are_returned__natetaubitzdotcom - 2018.08.13 at 14h 09m 56s.xml">
-      <configuration name="test_all_possible_sorted_arrays_are_returned: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_all_possible_sorted_arrays_are_returned__natetaubitzdotcom - 2018.08.13 at 14h 11m 43s.xml">
-      <configuration name="test_all_possible_sorted_arrays_are_returned: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_all_possible_sorted_arrays_are_returned__natetaubitzdotcom - 2018.08.13 at 14h 34m 20s.xml">
-      <configuration name="test_all_possible_sorted_arrays_are_returned: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_all_possible_sorted_arrays_are_returned__natetaubitzdotcom - 2018.08.13 at 14h 34m 50s.xml">
-      <configuration name="test_all_possible_sorted_arrays_are_returned: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_all_possible_sorted_arrays_are_returned__natetaubitzdotcom - 2018.08.13 at 14h 39m 01s.xml">
-      <configuration name="test_all_possible_sorted_arrays_are_returned: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="test_all_possible_sorted_arrays_are_returned__natetaubitzdotcom - 2018.08.13 at 15h 18m 36s.xml">
       <configuration name="test_all_possible_sorted_arrays_are_returned: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
@@ -605,15 +593,30 @@
     <history-entry file="test_all_possible_sorted_arrays_are_returned__natetaubitzdotcom - 2018.08.13 at 15h 43m 10s.xml">
       <configuration name="test_all_possible_sorted_arrays_are_returned: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="test_all_possible_sorted_arrays_are_returned__natetaubitzdotcom - 2018.08.15 at 10h 19m 38s.xml">
+      <configuration name="test_all_possible_sorted_arrays_are_returned: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_year_ranges_are_created__natetaubitzdotcom - 2018.08.15 at 14h 54m 28s.xml">
+      <configuration name="test_year_ranges_are_created: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_year_ranges_are_created__natetaubitzdotcom - 2018.08.15 at 14h 55m 12s.xml">
+      <configuration name="test_year_ranges_are_created: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_year_ranges_are_created__natetaubitzdotcom - 2018.08.15 at 14h 56m 14s.xml">
+      <configuration name="test_year_ranges_are_created: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_year_ranges_are_created__natetaubitzdotcom - 2018.08.15 at 14h 56m 50s.xml">
+      <configuration name="test_year_ranges_are_created: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47492000" />
+    <option name="totallyTimeSpent" value="50262000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1283" height="1412" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15713134" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15954874" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -659,8 +662,13 @@
           <line>10</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/lib/dates.rb</url>
+          <line>11</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="35" />
+      <option name="time" value="36" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="RailsRunConfigurationType">
@@ -712,19 +720,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/pages/react.html.erb" />
-    <entry file="file://$PROJECT_DIR$/test/models/some_model_test.rb" />
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/short-posts.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -932,13 +931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/models/user_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="5" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/fixtures/users.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1025,29 +1017,57 @@
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.4@global/gems/minitest-5.11.3/lib/minitest.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="276" column="6" lean-forward="true" selection-start-line="276" selection-start-column="6" selection-end-line="276" selection-end-column="6" />
+        <state relative-caret-position="4692">
+          <caret line="276" column="6" selection-start-line="276" selection-start-column="6" selection-end-line="276" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/models/user_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/models/arrays_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/arrays.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.4@global/gems/minitest-5.11.3/lib/minitest/test.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="457">
-          <caret line="112" column="36" lean-forward="true" selection-start-line="112" selection-start-column="36" selection-end-line="112" selection-end-column="36" />
+          <caret line="200" selection-start-line="200" selection-end-line="200" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/arrays.rb">
+    <entry file="file://$PROJECT_DIR$/test/models/dates_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="37" column="24" lean-forward="true" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+        <state relative-caret-position="391">
+          <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/models/arrays_test.rb">
+    <entry file="file://$PROJECT_DIR$/lib/dates.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        <state relative-caret-position="425">
+          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
         </state>
       </provider>
     </entry>
