@@ -6,6 +6,7 @@ class BlogPost < ApplicationRecord
   belongs_to :user
 
   scope :most_recent, -> () {order(created_at: :desc).limit(10)}
+  scope :published, -> (published) {where(published: published)}
 
   # get an introduction or shortened blog post
   def short_markup

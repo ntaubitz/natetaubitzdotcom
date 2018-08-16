@@ -4,7 +4,10 @@ class DashboardController < ApplicationController
 
   # GET /dashboard
   def index
-
+    @active_blog_post = nil
+    unless params.fetch(:blog_post_id, nil).nil?
+      @active_blog_post = BlogPost.find params[:blog_post_id]
+    end
   end
 
   # POST /dashboard/create_short_post
@@ -28,6 +31,12 @@ class DashboardController < ApplicationController
   end
 
   def create_blog_post
+    post = BlogPost.create(user: current_user, subject: 'new post', markup: '<p>be positive</p>')
+    redirect_to("/dashboard?blog_post_id=#{post.id}")
+  end
+
+  def save_blog_post
+    @active_blog_post = BlogPost.find blog_post_params[:blog_post_id]
     if blog_post_params[:subject].blank? || blog_post_params[:markup].blank?
       @alerts << {
         type: :danger,
@@ -35,11 +44,10 @@ class DashboardController < ApplicationController
         text: "please supply some bloggness"
       }
     else
-      BlogPost.new(
-        user: current_user,
-        subject: blog_post_params[:subject],
-        markup: blog_post_params[:markup]
-      ).save
+      @active_blog_post.subject = blog_post_params[:subject]
+      @active_blog_post.markup = blog_post_params[:markup]
+      @active_blog_post.published = blog_post_params[:published]
+      @active_blog_post.save
       @alerts << {
         type: :success,
         title: 'done!',
@@ -67,6 +75,6 @@ class DashboardController < ApplicationController
   end
 
   def blog_post_params
-    params.permit(:subject, :markup)
+    params.permit(:blog_post_id, :subject, :markup, :published)
   end
 end

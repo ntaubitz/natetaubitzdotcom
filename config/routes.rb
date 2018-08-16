@@ -12,7 +12,8 @@ Rails.application.routes.draw do
 
 
   post '/dashboard/create_short_post' => 'dashboard#create_short_post'
-  post '/dashboard/create_blog_post' => 'dashboard#create_blog_post'
+  get '/dashboard/create_blog_post' => 'dashboard#create_blog_post'
+  post '/dashboard/save_blog_post' => 'dashboard#save_blog_post'
   get '/logout' => 'pages#logout'
 
   resources :short_posts

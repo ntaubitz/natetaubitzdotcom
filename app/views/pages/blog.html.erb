@@ -3,7 +3,7 @@
   <div class="row">
     <div class="col-md-2 d-none d-md-block">
       <div class="list-group">
-        <% anonymous_user.blog_posts.most_recent.each do |post| %>
+        <% anonymous_user.blog_posts.published(true).most_recent.each do |post| %>
           <a href="<%= "#{host_url}/blog?blog_post_id=#{post.id}" %>"
              class="list-group-item <%= post.id == @active_blog_post.id ? 'active' : '' %>">
             <i class="fa fa-comment-o"></i> <%= post.subject %>

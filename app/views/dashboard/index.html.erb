@@ -22,28 +22,53 @@
       </div>
     </div>
 
-
     <button type="submit" class="btn btn-primary">Submit</button>
+
   <% end %>
   <h2>blog posts</h2>
-  <%= form_tag('/dashboard/create_blog_post', name: 'blog_posts') do %>
-    <div class="row">
-      <div class="col col-sm-12 col-md-3">
-        <div class="form-group">
-          <label for="post">subject</label>
-          <input type="text" class="form-control" id="subject" name="subject" placeholder="subject">
-        </div>
-      </div>
+  <div class="row">
+    <div class="col col-sm-12 col-md-6">
+      <% unless @active_blog_post.nil? %>
+        <%= form_tag("/dashboard/save_blog_post?blog_post_id=#{@active_blog_post.id}", name: 'blog_posts') do %>
+          <div class="row">
+            <div class="col col-sm-12">
+              <div class="form-group">
+                <label for="post">subject</label>
+                <input type="text" class="form-control" id="subject" name="subject" value="<%= @active_blog_post.subject %>" placeholder="subject">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-sm-12">
+              <div class="form-group">
+                <label for="markup">markup</label>
+                <textarea class="form-control" rows="20" id="markup" name="markup" placeholder="markup"><%= @active_blog_post.markup.html_safe %></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-sm-6">
+              <input type="checkbox" class="form-check-input" id="published" name="published" <%= @active_blog_post.published ? 'checked' : '' %>>
+              <label class="form-check-label" for="published">published</label><br/>
+            </div>
+            <div class="col col-sm-6 text-right">
+              <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        <% end %>
+      <% else %>
+        <a href="/dashboard/create_blog_post">create a post</a>
+      <% end %>
     </div>
-    <div class="row">
-      <div class="col col-sm-12 col-md-6">
-        <div class="form-group">
-          <label for="markup">markup</label>
-          <textarea class="form-control" rows="20" id="markup" name="markup" placeholder="markup"></textarea>
-        </div>
-      </div>
+    <div class="col col-sm-12 col-md-6">
+      <h4>In Progress</h4>
+      <% current_user.blog_posts.published(false).each do |post| %>
+        <a href="/dashboard/?blog_post_id=<%= post.id %>"><%= post.subject %></a><br/>
+      <% end %>
+      <h4>Recent</h4>
+      <% current_user.blog_posts.published(true).most_recent.each do |post| %>
+        <a href="/dashboard/?blog_post_id=<%= post.id %>"><%= post.subject %></a><br/>
+      <% end %>
     </div>
-
-    <button type="submit" class="btn btn-primary">Submit</button>
-  <% end %>
+  </div>
 </div>
