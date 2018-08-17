@@ -30,6 +30,17 @@
     <div class="col col-sm-12 col-md-6">
       <% unless @active_blog_post.nil? %>
         <%= form_tag("/dashboard/save_blog_post?blog_post_id=#{@active_blog_post.id}", name: 'blog_posts') do %>
+
+          <div class="row">
+            <div class="col col-sm-12">
+              <label for="category">category</label>
+              <select class="form-control" id="category" name="category">
+                <% BlogPost::CATEGORIES.each do |category| %>
+                <option value="<%=category.first%>" <%=@active_blog_post.category == category.second ? 'selected' : ''%>><%=category.second.humanize%></option>
+                <% end %>
+              </select>
+            </div>
+          </div>
           <div class="row">
             <div class="col col-sm-12">
               <div class="form-group">

@@ -16,5 +16,7 @@ module Natetaubitzdotcom
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
     config.autoload_paths += %W( #{Rails.root.to_s}/lib )
+
+    config.active_record.schema_format = :sql
   end
 end

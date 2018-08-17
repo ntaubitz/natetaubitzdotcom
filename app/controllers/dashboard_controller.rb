@@ -44,10 +44,7 @@ class DashboardController < ApplicationController
         text: "please supply some bloggness"
       }
     else
-      @active_blog_post.subject = blog_post_params[:subject]
-      @active_blog_post.markup = blog_post_params[:markup]
-      @active_blog_post.published = blog_post_params[:published]
-      @active_blog_post.save
+      @active_blog_post.update(blog_post_params.except(:blog_post_id))
       @alerts << {
         type: :success,
         title: 'done!',
@@ -75,6 +72,6 @@ class DashboardController < ApplicationController
   end
 
   def blog_post_params
-    params.permit(:blog_post_id, :subject, :markup, :published)
+    params.permit(:blog_post_id, :subject, :markup, :published, :category)
   end
 end

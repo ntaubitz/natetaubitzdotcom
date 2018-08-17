@@ -1,9 +1,20 @@
 <% @active_page = 'blog' %>
 <div class="container-fluid">
   <div class="row">
+    <div class="col col-sm-12">
+      <span>I blog about:</span>
+      <a class="blog-nav <%= params[:category] == 'software_development' ? 'active' : '' %>" href="?category=software_development">Software Development</a> |
+      <a class="blog-nav <%= params[:category] == 'jeeps' ? 'active' : '' %>" href="?category=jeeps">Jeeps</a> |
+      <a class="blog-nav <%= params[:category] == 'family' ? 'active' : '' %>" href="?category=family">Family</a> |
+      <a class="blog-nav <%= params[:category] == 'health' ? 'active' : '' %>" href="?category=health">Health</a>
+      <br/>
+      <br/>
+    </div>
+  </div>
+  <div class="row">
     <div class="col-md-2 d-none d-md-block">
       <div class="list-group">
-        <% anonymous_user.blog_posts.published(true).most_recent.each do |post| %>
+        <% anonymous_user.blog_posts.published(true).most_recent.for_category(params[:category]).each do |post| %>
           <a href="<%= "#{host_url}/blog?blog_post_id=#{post.id}" %>"
              class="list-group-item <%= post.id == @active_blog_post.id ? 'active' : '' %>">
             <i class="fa fa-comment-o"></i> <%= post.subject %>

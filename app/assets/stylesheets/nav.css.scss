@@ -42,3 +42,10 @@ nav.navbar {
     }
   }
 }
+
+a.blog-nav {
+  &.active {
+    color: $color-black;
+    font-weight: 500;
+  }
+}

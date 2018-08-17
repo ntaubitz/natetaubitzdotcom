@@ -6,8 +6,13 @@ class PagesController < ApplicationController
 
   # GET /blog
   def blog
+    if params[:category].blank?
+      params[:category] = BlogPost.last.category
+    end
+
     if params[:blog_post_id].blank?
-      params[:blog_post_id] = anonymous_user.blog_posts.published(true).most_recent.first.id
+      params[:blog_post_id] = anonymous_user.blog_posts.published(true)
+                                .for_category(params[:category]).most_recent.first.id
     end
 
     @active_blog_post = BlogPost.find params[:blog_post_id]

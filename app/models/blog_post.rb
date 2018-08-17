@@ -1,4 +1,11 @@
 class BlogPost < ApplicationRecord
+  CATEGORIES = {
+    software_development: 'software_development',
+    family: 'family',
+    health: 'health',
+    jeeps: 'jeeps'
+  }.freeze
+
   validates :subject, :presence => true
   validates :markup, :presence => true
   validates :user_id, :presence => true
@@ -7,6 +14,9 @@ class BlogPost < ApplicationRecord
 
   scope :most_recent, -> () {order(created_at: :desc).limit(10)}
   scope :published, -> (published) {where(published: published)}
+  scope :for_category, -> (category) {where(category: category)}
+
+  enum category: CATEGORIES
 
   # get an introduction or shortened blog post
   def short_markup
