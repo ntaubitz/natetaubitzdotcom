@@ -44,4 +44,58 @@ class Arrays
       end
     end
   end
+
+  def largest_value_at(input, index)
+    list = LinkedList.new
+    input.each do |value|
+      if list.empty?
+        list.add_to(value)
+      elsif value >= list.head.value
+        insert_at = nil
+        list.iterate do |node|
+          break if node.value >= value
+          insert_at = node
+        end
+        list.add_to(value, insert_at, false)
+      end
+      if list.count > index
+         list.remove(list.head)
+      end
+    end
+
+    list.head.value
+  end
+
+  def missing_value_simple(input)
+    at = nil
+    input.each do |value|
+      unless at.nil?
+        return at + 1 if value - at > 1
+      end
+      at = value
+    end
+    nil
+  end
+
+  def missing_value_divide_and_conquer(input, left=nil, right=nil)
+    # divide array in half
+    # if the start value + count is not the last value, missing is in that half
+    left = 0 if left.nil?
+    right = input.count - 1 if right.nil?
+
+    if (right - left) == 1
+      return input[left] + 1
+    end
+
+    middle = left + ((right - left) / 2)
+    if (input[left] + (middle - left)) != input[middle]
+      return missing_value_divide_and_conquer(input, left, middle)
+    elsif (input[middle+1] + right - (middle+1)) != input[right]
+      return missing_value_divide_and_conquer(input, middle + 1, right)
+    else
+      return input[middle] + 1
+    end
+
+    nil
+  end
 end
