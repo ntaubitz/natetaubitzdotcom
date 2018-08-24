@@ -13,13 +13,15 @@
  *= require_tree .
  *= require_self
  */
-@import "colors.css.scss";
-@import "fonts.css.scss";
 
-@import "bootstrap.min.css";
-@import "bootstrap-theme.min.css";
-@import "nav.css.scss";
-@import "short-posts.css.scss";
-
-@import "highlight/github.css";
+/*@import "";*/
+/*@import "colors.css.scss";*/
+/*@import "fonts.css.scss";*/
+/**/
+/*@import "bootstrap.min.css";*/
+/*@import "bootstrap-theme.min.css";*/
+/*@import "nav.css.scss";*/
+/*@import "short-posts.css.scss";*/
+/**/
+/*@import "highlight/github.css";*/
 
