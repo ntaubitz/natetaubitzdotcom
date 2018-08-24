@@ -60,4 +60,12 @@ class ArraysTest < ActiveSupport::TestCase
     # puts "Divide and conquer took: #{time.real * 1000}"
     assert missing == found
   end
+
+  test 'reverse plish notation is 9' do
+    assert 9 == @arrays.evaluate_reverse_polish_notation(['2', '1', '+', '3', '*'])
+  end
+
+  test 'reverse plish notation is 6' do
+    assert 6 == @arrays.evaluate_reverse_polish_notation(['4', '13', '5', '/', '+'])
+  end
 end

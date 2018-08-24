@@ -20,4 +20,8 @@ class Heap
     @list.remove(@list.head)
     value
   end
+
+  def count
+    @list.count
+  end
 end

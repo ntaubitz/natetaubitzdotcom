@@ -20,3 +20,6 @@
 @import "bootstrap-theme.min.css";
 @import "nav.css.scss";
 @import "short-posts.css.scss";
+
+@import "highlight/github.css";
+

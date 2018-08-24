@@ -2,18 +2,100 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b36d2c6-fdb1-463b-9404-cd3ba051123a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/binary_tree.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/binary_tree_node.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/binary_trees.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/heap.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/linked_list.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/linked_list_item.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sorting.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/binary_trees_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/heap_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/sorting_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/javascripts/highlight-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/javascripts/highlight.pack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight-override.css.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/agate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/androidstudio.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/arduino-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/arta.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/ascetic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/atelier-cave-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/atelier-cave-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/atelier-dune-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/atelier-dune-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/atelier-estuary-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/atelier-estuary-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/atelier-forest-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/atelier-forest-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/atelier-heath-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/atelier-heath-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/atelier-lakeside-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/atelier-lakeside-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/atelier-plateau-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/atelier-plateau-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/atelier-savanna-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/atelier-savanna-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/atelier-seaside-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/atelier-seaside-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/atelier-sulphurpool-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/atelier-sulphurpool-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/atom-one-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/atom-one-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/brown-paper.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/brown-papersq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/codepen-embed.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/color-brewer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/darcula.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/darkula.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/docco.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/dracula.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/far.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/foundation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/github-gist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/github.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/googlecode.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/grayscale.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/gruvbox-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/gruvbox-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/hopscotch.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/hybrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/idea.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/ir-black.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/kimbie.dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/kimbie.light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/magula.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/mono-blue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/monokai-sublime.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/monokai.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/obsidian.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/ocean.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/paraiso-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/paraiso-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/pojoaque.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/pojoaque.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/purebasic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/qtcreator_dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/qtcreator_light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/railscasts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/rainbow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/routeros.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/school-book.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/school-book.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/solarized-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/solarized-light.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/sunburst.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/tomorrow-night-blue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/tomorrow-night-bright.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/tomorrow-night-eighties.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/tomorrow-night.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/tomorrow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/vs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/vs2015.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/xcode.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/xt256.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/highlight/zenburn.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/strings.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/models/strings_test.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/pages/blog.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/pages/blog.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/pages/code.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/pages/code.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/arrays.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/arrays.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/heap.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/heap.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/models/arrays_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/arrays_test.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -32,6 +114,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/natetaubitzdotcom@test_password_is_crypted__natetaubitzdotcom.rcov" NAME="test_password_is_crypted: natetaubitzdotcom Coverage Results" MODIFIED="1533909858606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="natetaubitzdotcom" />
     <SUITE FILE_PATH="coverage/natetaubitzdotcom@test_year_ranges_are_created__natetaubitzdotcom.rcov" NAME="test_year_ranges_are_created: natetaubitzdotcom Coverage Results" MODIFIED="1534377313848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="natetaubitzdotcom" />
+    <SUITE FILE_PATH="coverage/natetaubitzdotcom@test_parens_are_valid__natetaubitzdotcom.rcov" NAME="test_parens_are_valid: natetaubitzdotcom Coverage Results" MODIFIED="1534897889627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="natetaubitzdotcom" />
     <SUITE FILE_PATH="coverage/natetaubitzdotcom@test_a_long_blog_post_with_multiple_tags_has_just_the_first_tag__natetaubitzdotcom.rcov" NAME="test_a_long_blog_post_with_multiple_tags_has_just_the_first_tag: natetaubitzdotcom Coverage Results" MODIFIED="1534176511271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="natetaubitzdotcom" />
     <SUITE FILE_PATH="coverage/natetaubitzdotcom@test.rcov" NAME="test Coverage Results" MODIFIED="1534187546070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/.rvm/gems/ruby-2.4.4@global/gems/minitest-5.11.3/lib/minitest" MODULE_NAME="natetaubitzdotcom" />
     <SUITE FILE_PATH="coverage/natetaubitzdotcom@test_find_the_nth_largest_value_in_an_array__natetaubitzdotcom.rcov" NAME="test_find_the_nth_largest_value_in_an_array: natetaubitzdotcom Coverage Results" MODIFIED="1534811429237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="natetaubitzdotcom" />
@@ -39,101 +122,112 @@
     <SUITE FILE_PATH="coverage/natetaubitzdotcom@test_an_array_is_merge_sorted__natetaubitzdotcom.rcov" NAME="test_an_array_is_merge_sorted: natetaubitzdotcom Coverage Results" MODIFIED="1534804676085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="natetaubitzdotcom" />
     <SUITE FILE_PATH="coverage/natetaubitzdotcom@test_all_possible_sorted_arrays_are_returned__natetaubitzdotcom.rcov" NAME="test_all_possible_sorted_arrays_are_returned: natetaubitzdotcom Coverage Results" MODIFIED="1534189367762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="natetaubitzdotcom" />
     <SUITE FILE_PATH="coverage/natetaubitzdotcom@linked_list.rcov" NAME="linked_list Coverage Results" MODIFIED="1534808993266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="natetaubitzdotcom" />
+    <SUITE FILE_PATH="coverage/natetaubitzdotcom@test_words_in_sentence_are_reversed__natetaubitzdotcom.rcov" NAME="test_words_in_sentence_are_reversed: natetaubitzdotcom Coverage Results" MODIFIED="1534875113747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="natetaubitzdotcom" />
+    <SUITE FILE_PATH="coverage/natetaubitzdotcom@test_str_str_does_not_find_a_string__natetaubitzdotcom.rcov" NAME="test_str_str_does_not_find_a_string: natetaubitzdotcom Coverage Results" MODIFIED="1534878104410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="natetaubitzdotcom" />
     <SUITE FILE_PATH="coverage/natetaubitzdotcom@test_a_long_blog_post_is_truncated__natetaubitzdotcom.rcov" NAME="test_a_long_blog_post_is_truncated: natetaubitzdotcom Coverage Results" MODIFIED="1534173441902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="natetaubitzdotcom" />
-    <SUITE FILE_PATH="coverage/natetaubitzdotcom@Development__natetaubitzdotcom.rcov" NAME="Development: natetaubitzdotcom Coverage Results" MODIFIED="1534537694600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="natetaubitzdotcom" />
+    <SUITE FILE_PATH="coverage/natetaubitzdotcom@test_str_str_finds_the_index__natetaubitzdotcom.rcov" NAME="test_str_str_finds_the_index: natetaubitzdotcom Coverage Results" MODIFIED="1534877967971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="natetaubitzdotcom" />
+    <SUITE FILE_PATH="coverage/natetaubitzdotcom@Development__natetaubitzdotcom.rcov" NAME="Development: natetaubitzdotcom Coverage Results" MODIFIED="1535124295570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="natetaubitzdotcom" />
     <SUITE FILE_PATH="coverage/natetaubitzdotcom@test_foo__natetaubitzdotcom.rcov" NAME="test_foo: natetaubitzdotcom Coverage Results" MODIFIED="1534183046982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="natetaubitzdotcom" />
+    <SUITE FILE_PATH="coverage/natetaubitzdotcom@test_reverse_plish_notation_is_6__natetaubitzdotcom.rcov" NAME="test_reverse_plish_notation_is_6: natetaubitzdotcom Coverage Results" MODIFIED="1534876045874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="natetaubitzdotcom" />
     <SUITE FILE_PATH="coverage/natetaubitzdotcom@test_find_a_missing_value_by_divide_and_conquer__natetaubitzdotcom.rcov" NAME="test_find_a_missing_value_by_divide_and_conquer: natetaubitzdotcom Coverage Results" MODIFIED="1534864884684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="natetaubitzdotcom" />
+    <SUITE FILE_PATH="coverage/natetaubitzdotcom@test_reverse_plish_notation_is_9__natetaubitzdotcom.rcov" NAME="test_reverse_plish_notation_is_9: natetaubitzdotcom Coverage Results" MODIFIED="1534875873442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="natetaubitzdotcom" />
     <SUITE FILE_PATH="coverage/natetaubitzdotcom@test_find_2nd_largest_element_in_a_binary_tree__natetaubitzdotcom.rcov" NAME="test_find_2nd_largest_element_in_a_binary_tree: natetaubitzdotcom Coverage Results" MODIFIED="1534792295565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="natetaubitzdotcom" />
     <SUITE FILE_PATH="coverage/natetaubitzdotcom@Run_test__SortingTest___natetaubitzdotcom.rcov" NAME="Run test 'SortingTest': natetaubitzdotcom Coverage Results" MODIFIED="1534796281138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="natetaubitzdotcom" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="arrays.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/arrays.rb">
+      <file leaf-file-name="strings.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/strings.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="78" selection-start-line="78" selection-end-line="78" />
+            <state relative-caret-position="867">
+              <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="assertions.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.4@global/gems/minitest-5.11.3/lib/minitest/assertions.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="134" selection-start-line="134" selection-end-line="134" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dependencies.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.4/gems/activesupport-5.2.1/lib/active_support/dependencies.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="255" selection-start-line="255" selection-end-line="255" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.4@global/gems/minitest-5.11.3/lib/minitest/test.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="200" selection-start-line="200" selection-end-line="200" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="arrays_test.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/models/arrays_test.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sorting.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/sorting.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="heap_test.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/models/heap_test.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="linked_list.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/linked_list.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="linked_list_item.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/linked_list_item.rb">
+      <file leaf-file-name="HelloWorld.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/javascript/components/HelloWorld.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
               <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="heap.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/heap.rb">
+      <file leaf-file-name="NateDogg.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/javascript/components/NateDogg.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+            <state relative-caret-position="272">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="code.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/pages/code.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="production.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="57" lean-forward="true" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blog.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/pages/blog.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="highlight-init.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/highlight-init.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="68" selection-start-column="68" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="highlight-override.css.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/highlight-override.css.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -168,12 +262,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20180810094400_add_security_to_users.rb" />
-        <option value="$PROJECT_DIR$/test/fixtures/users.yml" />
-        <option value="$PROJECT_DIR$/test/models/user_test.rb" />
-        <option value="$PROJECT_DIR$/app/views/pages/login.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/concerns/passwords.rb" />
-        <option value="$PROJECT_DIR$/app/views/pages/dashboard.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20180810125300_create_user_groups.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180810125100_create_groups.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180810125200_create_permissions.rb" />
@@ -199,14 +287,12 @@
         <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/blog_post.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/nav.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/pages/blog.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/javascript/components/NateDogg.js" />
         <option value="$PROJECT_DIR$/app/javascript/components/NateDogg.js.tsx" />
         <option value="$PROJECT_DIR$/app/javascript/packs/application.js" />
         <option value="$PROJECT_DIR$/app/javascript/components/NateDogg.tsx" />
-        <option value="$PROJECT_DIR$/app/views/pages/code.html.erb" />
         <option value="$PROJECT_DIR$/lib/binary_trees.rb" />
         <option value="$PROJECT_DIR$/lib/binary_tree.rb" />
         <option value="$PROJECT_DIR$/test/models/binary_trees_test.rb" />
@@ -215,10 +301,18 @@
         <option value="$PROJECT_DIR$/lib/sorting.rb" />
         <option value="$PROJECT_DIR$/lib/linked_list_item.rb" />
         <option value="$PROJECT_DIR$/test/models/heap_test.rb" />
-        <option value="$PROJECT_DIR$/lib/heap.rb" />
         <option value="$PROJECT_DIR$/lib/linked_list.rb" />
-        <option value="$PROJECT_DIR$/lib/arrays.rb" />
+        <option value="$PROJECT_DIR$/lib/heap.rb" />
         <option value="$PROJECT_DIR$/test/models/arrays_test.rb" />
+        <option value="$PROJECT_DIR$/lib/arrays.rb" />
+        <option value="$PROJECT_DIR$/test/models/strings_test.rb" />
+        <option value="$PROJECT_DIR$/lib/strings.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/hightlight-init.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/views/pages/blog.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/highlight-override.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/app/views/pages/code.html.erb" />
       </list>
     </option>
   </component>
@@ -245,7 +339,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1283" />
+    <option name="width" value="1278" />
     <option name="height" value="1412" />
   </component>
   <component name="ProjectView">
@@ -253,7 +347,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -264,63 +357,19 @@
             <path>
               <item name="natetaubitzdotcom" type="b2602c69:ProjectViewProjectNode" />
               <item name="natetaubitzdotcom" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="natetaubitzdotcom" type="b2602c69:ProjectViewProjectNode" />
               <item name="natetaubitzdotcom" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="natetaubitzdotcom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="natetaubitzdotcom" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="natetaubitzdotcom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="natetaubitzdotcom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="activesupport (v5.2.1, RVM: ruby-2.4.4) [gem]" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="natetaubitzdotcom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="activesupport (v5.2.1, RVM: ruby-2.4.4) [gem]" type="70bed36:NamedLibraryElementNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="natetaubitzdotcom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="activesupport (v5.2.1, RVM: ruby-2.4.4) [gem]" type="70bed36:NamedLibraryElementNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="active_support" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="natetaubitzdotcom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="minitest (v5.11.3, RVM: ruby-2.4.4) [gem]" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="natetaubitzdotcom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="minitest (v5.11.3, RVM: ruby-2.4.4) [gem]" type="70bed36:NamedLibraryElementNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="natetaubitzdotcom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="minitest (v5.11.3, RVM: ruby-2.4.4) [gem]" type="70bed36:NamedLibraryElementNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="minitest" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="environments" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="RailsProjectView" />
     </panes>
   </component>
@@ -332,8 +381,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/views/dashboard" />
       <recent name="$PROJECT_DIR$/app/assets/javascripts" />
+      <recent name="$PROJECT_DIR$/app/assets/stylesheets/highlight" />
+      <recent name="$PROJECT_DIR$/app/views/dashboard" />
       <recent name="$PROJECT_DIR$/app/assets/stylesheets" />
     </key>
   </component>
@@ -349,7 +399,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.test_find_a_missing_value_by_divide_and_conquer: natetaubitzdotcom">
+  <component name="RunManager" selected="Rails.Development: natetaubitzdotcom">
     <configuration name="Development: natetaubitzdotcom" type="RailsRunConfigurationType" factoryName="Rails">
       <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
       <module name="natetaubitzdotcom" />
@@ -441,24 +491,7 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
     </configuration>
-    <configuration name="linked_list" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
-      <module name="natetaubitzdotcom" />
-      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/lib" />
-      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/lib/linked_list.rb" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
-    </configuration>
-    <configuration name="Run test 'SortingTest': natetaubitzdotcom" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+    <configuration name="test_parens_are_valid: natetaubitzdotcom" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="natetaubitzdotcom" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift) -Itest" />
@@ -478,45 +511,16 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/models/sorting_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/models/strings_test.rb" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
-    </configuration>
-    <configuration name="test_an_array_is_merge_sorted: natetaubitzdotcom" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
-      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
-      <module name="natetaubitzdotcom" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift) -Itest" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/models/sorting_test.rb" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_an_array_is_merge_sorted" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_parens_are_valid" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
     </configuration>
-    <configuration name="test_find_a_missing_value_by_divide_and_conquer: natetaubitzdotcom" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+    <configuration name="test_reverse_plish_notation_is_6: natetaubitzdotcom" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="natetaubitzdotcom" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift) -Itest" />
@@ -538,14 +542,14 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/models/arrays_test.rb" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_find_a_missing_value_by_divide_and_conquer" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_reverse_plish_notation_is_6" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
     </configuration>
-    <configuration name="test_find_the_nth_largest_value_in_an_array: natetaubitzdotcom" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+    <configuration name="test_reverse_plish_notation_is_9: natetaubitzdotcom" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="natetaubitzdotcom" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift) -Itest" />
@@ -567,7 +571,65 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/models/arrays_test.rb" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_find_the_nth_largest_value_in_an_array" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_reverse_plish_notation_is_9" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+    </configuration>
+    <configuration name="test_str_str_does_not_find_a_string: natetaubitzdotcom" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+      <module name="natetaubitzdotcom" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift) -Itest" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/models/strings_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_str_str_does_not_find_a_string" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+    </configuration>
+    <configuration name="test_str_str_finds_the_index: natetaubitzdotcom" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+      <module name="natetaubitzdotcom" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift) -Itest" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/models/strings_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_str_str_finds_the_index" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
@@ -579,19 +641,19 @@
       <item itemvalue="Rake.spec: natetaubitzdotcom" />
       <item itemvalue="Rails.Production: natetaubitzdotcom" />
       <item itemvalue="Rails.Development: natetaubitzdotcom" />
-      <item itemvalue="Test::Unit/Shoulda/Minitest.test_an_array_is_merge_sorted: natetaubitzdotcom" />
-      <item itemvalue="Test::Unit/Shoulda/Minitest.Run test 'SortingTest': natetaubitzdotcom" />
-      <item itemvalue="Test::Unit/Shoulda/Minitest.test_find_the_nth_largest_value_in_an_array: natetaubitzdotcom" />
-      <item itemvalue="Ruby.linked_list" />
-      <item itemvalue="Test::Unit/Shoulda/Minitest.test_find_a_missing_value_by_divide_and_conquer: natetaubitzdotcom" />
+      <item itemvalue="Test::Unit/Shoulda/Minitest.test_reverse_plish_notation_is_9: natetaubitzdotcom" />
+      <item itemvalue="Test::Unit/Shoulda/Minitest.test_reverse_plish_notation_is_6: natetaubitzdotcom" />
+      <item itemvalue="Test::Unit/Shoulda/Minitest.test_str_str_finds_the_index: natetaubitzdotcom" />
+      <item itemvalue="Test::Unit/Shoulda/Minitest.test_str_str_does_not_find_a_string: natetaubitzdotcom" />
+      <item itemvalue="Test::Unit/Shoulda/Minitest.test_parens_are_valid: natetaubitzdotcom" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Test::Unit/Shoulda/Minitest.test_find_a_missing_value_by_divide_and_conquer: natetaubitzdotcom" />
-        <item itemvalue="Test::Unit/Shoulda/Minitest.test_find_the_nth_largest_value_in_an_array: natetaubitzdotcom" />
-        <item itemvalue="Ruby.linked_list" />
-        <item itemvalue="Test::Unit/Shoulda/Minitest.test_an_array_is_merge_sorted: natetaubitzdotcom" />
-        <item itemvalue="Test::Unit/Shoulda/Minitest.Run test 'SortingTest': natetaubitzdotcom" />
+        <item itemvalue="Test::Unit/Shoulda/Minitest.test_parens_are_valid: natetaubitzdotcom" />
+        <item itemvalue="Test::Unit/Shoulda/Minitest.test_str_str_does_not_find_a_string: natetaubitzdotcom" />
+        <item itemvalue="Test::Unit/Shoulda/Minitest.test_str_str_finds_the_index: natetaubitzdotcom" />
+        <item itemvalue="Test::Unit/Shoulda/Minitest.test_reverse_plish_notation_is_6: natetaubitzdotcom" />
+        <item itemvalue="Test::Unit/Shoulda/Minitest.test_reverse_plish_notation_is_9: natetaubitzdotcom" />
       </list>
     </recent_temporary>
   </component>
@@ -616,63 +678,62 @@
       <workItem from="1534168172197" duration="91000" />
       <workItem from="1534170926916" duration="16714000" />
       <workItem from="1534358199089" duration="6859000" />
-      <workItem from="1534519838184" duration="27462000" />
+      <workItem from="1534519838184" duration="38757000" />
+      <workItem from="1535121807509" duration="2471000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test_find_a_missing_value_by_divide_and_conquer__natetaubitzdotcom - 2018.08.21 at 11h 07m 55s.xml">
-      <configuration name="test_find_a_missing_value_by_divide_and_conquer: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="test_str_str_finds_the_index__natetaubitzdotcom - 2018.08.21 at 14h 57m 31s.xml">
+      <configuration name="test_str_str_finds_the_index: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_find_a_missing_value_by_divide_and_conquer__natetaubitzdotcom - 2018.08.21 at 11h 08m 59s.xml">
-      <configuration name="test_find_a_missing_value_by_divide_and_conquer: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="test_str_str_finds_the_index__natetaubitzdotcom - 2018.08.21 at 15h 00m 04s.xml">
+      <configuration name="test_str_str_finds_the_index: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_find_a_missing_value_by_divide_and_conquer__natetaubitzdotcom - 2018.08.21 at 11h 11m 57s.xml">
-      <configuration name="test_find_a_missing_value_by_divide_and_conquer: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="test_str_str_does_not_find_a_string__natetaubitzdotcom - 2018.08.21 at 15h 02m 31s.xml">
+      <configuration name="test_str_str_does_not_find_a_string: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_find_a_missing_value_by_divide_and_conquer__natetaubitzdotcom - 2018.08.21 at 11h 12m 04s.xml">
-      <configuration name="test_find_a_missing_value_by_divide_and_conquer: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="test_parens_are_valid__natetaubitzdotcom - 2018.08.21 at 20h 06m 27s.xml">
+      <configuration name="test_parens_are_valid: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_find_a_missing_value_by_divide_and_conquer__natetaubitzdotcom - 2018.08.21 at 11h 12m 48s.xml">
-      <configuration name="test_find_a_missing_value_by_divide_and_conquer: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="test_parens_are_valid__natetaubitzdotcom - 2018.08.21 at 20h 13m 20s.xml">
+      <configuration name="test_parens_are_valid: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_find_a_missing_value_by_divide_and_conquer__natetaubitzdotcom - 2018.08.21 at 11h 13m 59s.xml">
-      <configuration name="test_find_a_missing_value_by_divide_and_conquer: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="test_parens_are_valid__natetaubitzdotcom - 2018.08.21 at 20h 20m 32s.xml">
+      <configuration name="test_parens_are_valid: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_find_a_missing_value_by_divide_and_conquer__natetaubitzdotcom - 2018.08.21 at 11h 14m 27s.xml">
-      <configuration name="test_find_a_missing_value_by_divide_and_conquer: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="test_parens_are_valid__natetaubitzdotcom - 2018.08.21 at 20h 23m 52s.xml">
+      <configuration name="test_parens_are_valid: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_find_a_missing_value_by_divide_and_conquer__natetaubitzdotcom - 2018.08.21 at 11h 17m 24s.xml">
-      <configuration name="test_find_a_missing_value_by_divide_and_conquer: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="test_parens_are_valid__natetaubitzdotcom - 2018.08.21 at 20h 24m 18s.xml">
+      <configuration name="test_parens_are_valid: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_find_a_missing_value_by_divide_and_conquer__natetaubitzdotcom - 2018.08.21 at 11h 21m 15s.xml">
-      <configuration name="test_find_a_missing_value_by_divide_and_conquer: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="test_parens_are_valid__natetaubitzdotcom - 2018.08.21 at 20h 25m 22s.xml">
+      <configuration name="test_parens_are_valid: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_find_a_missing_value_by_divide_and_conquer__natetaubitzdotcom - 2018.08.21 at 11h 25m 16s.xml">
-      <configuration name="test_find_a_missing_value_by_divide_and_conquer: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="test_parens_are_valid__natetaubitzdotcom - 2018.08.21 at 20h 33m 47s.xml">
+      <configuration name="test_parens_are_valid: natetaubitzdotcom" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83130000" />
+    <option name="totallyTimeSpent" value="96896000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1283" height="1412" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1278" height="1412" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32986626" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32986626" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32986626" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32986626" />
-      <window_info anchor="bottom" id="TypeScript" weight="0.32986626" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16196616" />
+      <window_info anchor="bottom" id="TypeScript" order="8" weight="0.32986626" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16504854" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32986626" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39970282" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39970282" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -680,6 +741,7 @@
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32986626" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32986626" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -722,17 +784,57 @@
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/lib/arrays.rb</url>
-          <line>98</line>
-          <option name="timeStamp" value="65" />
+          <url>file://$PROJECT_DIR$/lib/strings.rb</url>
+          <line>3</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/lib/strings.rb</url>
+          <line>5</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/lib/strings.rb</url>
+          <line>9</line>
+          <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/lib/arrays.rb</url>
-          <line>85</line>
-          <option name="timeStamp" value="67" />
+          <line>102</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/lib/arrays.rb</url>
+          <line>104</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/lib/arrays.rb</url>
+          <line>115</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/lib/strings.rb</url>
+          <line>15</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/lib/strings.rb</url>
+          <line>17</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/lib/strings.rb</url>
+          <line>20</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/lib/strings.rb</url>
+          <line>41</line>
+          <option name="timeStamp" value="77" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="68" />
+      <option name="time" value="78" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="RailsRunConfigurationType">
@@ -754,11 +856,35 @@
         <watch expression="right-left" language="ruby" />
         <watch expression="input[left..right]" language="ruby" />
         <watch expression="input[middle]" language="ruby" />
+        <watch expression="heap.count" language="ruby" />
+        <watch expression="input[matches + index]" language="ruby" />
+        <watch expression="types[current_type]" language="ruby" />
+        <watch expression="types['(']" language="ruby" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>types['(']</expression-string>
+        <language-id>ruby</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>types[current_type]</expression-string>
+        <language-id>ruby</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>input[matches + index]</expression-string>
+        <language-id>ruby</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>heap.count</expression-string>
+        <language-id>ruby</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>input[middle]</expression-string>
         <language-id>ruby</language-id>
@@ -789,78 +915,9 @@
         <language-id>ruby</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>right[j]</expression-string>
-        <language-id>ruby</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>left_data[i]</expression-string>
-        <language-id>ruby</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>input[middle..-1]</expression-string>
-        <language-id>ruby</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>input[0..middle]</expression-string>
-        <language-id>ruby</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/short_post.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="63" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/authentication.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/fixtures/users.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.4@global/gems/nokogiri-1.8.4/lib/nokogiri/xml/node_set.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="203" selection-start-line="203" selection-end-line="203" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/fixtures/blog_posts.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="1006" selection-start-line="8" selection-start-column="1006" selection-end-line="8" selection-end-column="1006" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="719">
@@ -987,13 +1044,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/blog.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
@@ -1005,30 +1055,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="46" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/javascript/components/HelloWorld.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/javascript/packs/hello_typescript.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/config/webpack/loaders/typescript.js">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1037,9 +1068,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding>
-            <element signature="e#228#253#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1047,23 +1075,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/code.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/javascript/components/NateDogg.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -1130,13 +1141,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/heap.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.4@global/gems/minitest-5.11.3/lib/minitest/test.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
@@ -1146,36 +1150,126 @@
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.4/gems/activesupport-5.2.1/lib/active_support/dependencies.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
+        <state relative-caret-position="4335">
           <caret line="255" selection-start-line="255" selection-end-line="255" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.4@global/gems/minitest-5.11.3/lib/minitest/assertions.rb">
+    <entry file="file://$PROJECT_DIR$/lib/heap.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="134" selection-start-line="134" selection-end-line="134" />
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/linked_list.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/arrays.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        <state relative-caret-position="374">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/models/arrays_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+        <state relative-caret-position="1156">
+          <caret line="68" column="36" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/arrays.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2006">
+          <caret line="118" column="30" selection-start-line="118" selection-start-column="30" selection-end-line="118" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.4@global/gems/minitest-5.11.3/lib/minitest/assertions.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2278">
+          <caret line="134" selection-start-line="134" selection-end-line="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/models/strings_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/strings.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/javascript/components/HelloWorld.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/highlight-init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="68" selection-start-column="68" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/highlight-override.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/blog.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/javascript/components/NateDogg.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/code.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="57" lean-forward="true" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
         </state>
       </provider>
     </entry>

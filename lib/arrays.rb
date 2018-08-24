@@ -98,4 +98,29 @@ class Arrays
 
     nil
   end
+
+  def evaluate_reverse_polish_notation(input)
+    heap = Heap.new
+    input.each do |value|
+      if character_type(value) == :none
+        heap.push(value)
+      else
+        second = heap.pop.to_i
+        first = heap.pop.to_i
+        heap.push(first * second) if character_type(value) == :multiplication
+        heap.push(first / second) if character_type(value) == :division
+        heap.push(first + second) if character_type(value) == :addition
+        heap.push(first - second) if character_type(value) == :subtraction
+      end
+    end
+    heap.pop.to_i
+  end
+
+  def character_type(character)
+    return :multiplication if character == '*'
+    return :division if character == '/'
+    return :addition if character == '+'
+    return :subtraction if character == '-'
+    :none
+  end
 end

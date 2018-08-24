@@ -22,10 +22,13 @@
         <% end %>
       </div>
     </div>
-    <div class="col-md-9 ml-sm-auto col-lg-10 px-4">
+    <div class="blog col-md-9 ml-sm-auto col-lg-10 px-4">
       <h2><%= @active_blog_post.subject %></h2>
       <%= @active_blog_post.markup.html_safe %>
       <small>Posted: <%= @active_blog_post.created_at.strftime('%B %d %Y') %></small>
     </div>
   </div>
 </div>
+<script type="application/javascript">
+    $('pre code').each(function(i, block) {hljs.highlightBlock(block);})
+</script>

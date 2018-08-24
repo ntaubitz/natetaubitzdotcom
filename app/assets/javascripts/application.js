@@ -15,3 +15,6 @@
 //= require_tree .
 
 //= require bootstrap.min
+
+//= require highlight.pack
+//= require highlight-init
