@@ -16,6 +16,7 @@ class PagesController < ApplicationController
     end
 
     @active_blog_post = BlogPost.find params[:blog_post_id]
+    @page_title = "Nathan Taubitz: #{@active_blog_post.subject}"
   end
 
   # GET /contact
