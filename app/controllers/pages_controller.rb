@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   # GET /
   def overview
-    @most_recent_blog_post = BlogPost.most_recent.first
+    @most_recent_blog_post = BlogPost.published(true).most_recent.first
   end
 
   # GET /blog
