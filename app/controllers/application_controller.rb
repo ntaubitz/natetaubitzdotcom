@@ -38,4 +38,12 @@ class ApplicationController < ActionController::Base
     Natetaubitzdotcom::Application.config.host_url
   end
 
+  def verify_admin
+    if current_user.nil? || !current_user.is_admin?
+      redirect_to '/login'
+      return false
+    end
+    true
+  end
+
 end

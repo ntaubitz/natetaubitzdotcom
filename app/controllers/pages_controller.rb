@@ -4,6 +4,10 @@ class PagesController < ApplicationController
     @most_recent_blog_post = BlogPost.published(true).most_recent.first
   end
 
+  # GET /vue
+  def vue
+  end
+
   # GET /blog
   def blog
     if params[:category].blank?

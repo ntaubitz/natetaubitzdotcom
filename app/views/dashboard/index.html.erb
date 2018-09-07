@@ -4,8 +4,23 @@
 %>
 
 <div class="container">
-  <h1>dashboard</h1>
+  <ul class="nav nav-tabs">
+    <li class="nav-item <%= @active_tab == :short_posts ? 'active' : '' %>">
+      <a class="nav-link <%= @active_tab == :short_posts ? 'active' : '' %>"
+         href="/dashboard?active_tab=short_posts">short posts</a>
+    </li>
+    <li class="nav-item <%= @active_tab == :blog_posts ? 'active' : '' %>">
+      <a class="nav-link <%= @active_tab == :blog_posts ? 'active' : '' %>"
+         href="/dashboard?active_tab=blog_posts">blog posts</a>
+    </li>
+    <li class="nav-item <%= @active_tab == :work_log ? 'active' : '' %>">
+      <a class="nav-link <%= @active_tab == :work_log ? 'active' : '' %>"
+         href="/dashboard?active_tab=work_log">work log</a>
+    </li>
+  </ul>
+
   <div class="row">
+    <br/>
     <div class="col col-sm-12 col-md-6">
       <% @alerts.each do |alert| %>
         <div class="alert alert-<%= alert[:type] %>" role="alert">
@@ -14,75 +29,17 @@
       <% end %>
     </div>
   </div>
-  <h2>short posts</h2>
-  <%= form_tag('/dashboard/create_short_post', name: 'short_posts') do %>
-    <div class="row">
-      <div class="col col-sm-12 col-md-3">
-        <div class="form-group">
-          <label for="post">post</label>
-          <input type="text" class="form-control" id="post" name="post" placeholder="all things wonderful">
-        </div>
-      </div>
-    </div>
 
-    <button type="submit" class="btn btn-primary">Submit</button>
-
+  <% if @active_tab == :short_posts %>
+    <%= render "short_posts" %>
+  <% elsif @active_tab == :blog_posts %>
+    <%= render "blog_posts" %>
+  <% else %>
+    <%= render "work_logs" %>
   <% end %>
-  <h2>blog posts</h2>
-  <div class="row">
-    <div class="col col-sm-12 col-md-6">
-      <% unless @active_blog_post.nil? %>
-        <%= form_tag("/dashboard/save_blog_post?blog_post_id=#{@active_blog_post.id}", name: 'blog_posts') do %>
 
-          <div class="row">
-            <div class="col col-sm-12">
-              <label for="category">category</label>
-              <select class="form-control" id="category" name="category">
-                <% BlogPost::CATEGORIES.each do |category| %>
-                <option value="<%=category.first%>" <%=@active_blog_post.category == category.second ? 'selected' : ''%>><%=category.second.humanize%></option>
-                <% end %>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col col-sm-12">
-              <div class="form-group">
-                <label for="post">subject</label>
-                <input type="text" class="form-control" id="subject" name="subject" value="<%= @active_blog_post.subject %>" placeholder="subject">
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col col-sm-12">
-              <div class="form-group">
-                <label for="markup">markup</label>
-                <textarea class="form-control" rows="20" id="markup" name="markup" placeholder="markup"><%= @active_blog_post.markup.html_safe %></textarea>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col col-sm-6">
-              <input type="checkbox" class="form-check-input" id="published" name="published" <%= @active_blog_post.published ? 'checked' : '' %>>
-              <label class="form-check-label" for="published">published</label><br/>
-            </div>
-            <div class="col col-sm-6 text-right">
-              <button type="submit" class="btn btn-primary">Save</button>
-            </div>
-          </div>
-        <% end %>
-      <% else %>
-        <a href="/dashboard/create_blog_post">create a post</a>
-      <% end %>
-    </div>
-    <div class="col col-sm-12 col-md-6">
-      <h4>In Progress</h4>
-      <% current_user.blog_posts.published(false).each do |post| %>
-        <a href="/dashboard/?blog_post_id=<%= post.id %>"><%= post.subject %></a><br/>
-      <% end %>
-      <h4>Recent</h4>
-      <% current_user.blog_posts.published(true).most_recent.each do |post| %>
-        <a href="/dashboard/?blog_post_id=<%= post.id %>"><%= post.subject %></a><br/>
-      <% end %>
-    </div>
-  </div>
+
+
+
+
 </div>

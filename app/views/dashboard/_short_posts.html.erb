@@ -1,0 +1,13 @@
+<%= form_tag('/dashboard/create_short_post', name: 'short_posts') do %>
+  <div class="row">
+    <div class="col col-sm-12 col-md-3">
+      <div class="form-group">
+        <label for="post">post</label>
+        <input type="text" class="form-control" id="post" name="post" placeholder="all things wonderful">
+      </div>
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+
+<% end %>

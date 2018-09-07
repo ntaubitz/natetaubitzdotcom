@@ -9,12 +9,17 @@ class User < ApplicationRecord
 
   has_many :short_posts
   has_many :blog_posts
+  has_many :work_logs
   has_and_belongs_to_many :groups, join_table: :user_groups
 
   scope :by_email, -> (email) {where(email: email)}
 
   def can?(permission)
     permissions.include? permission
+  end
+
+  def is_admin?
+    self.groups.select{|g| g.name.to_sym == :admin}.count > 0
   end
 
   private
