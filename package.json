@@ -11,7 +11,10 @@
     "react-dom": "^16.4.2",
     "react_ujs": "^2.4.4",
     "ts-loader": "3.5.0",
-    "typescript": "^3.0.1"
+    "typescript": "^3.0.1",
+    "vue": "^2.5.17",
+    "vue-loader": "14.2.2",
+    "vue-template-compiler": "^2.5.17"
   },
   "devDependencies": {
     "webpack-dev-server": "2.11.2"

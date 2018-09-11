@@ -1,6 +1,7 @@
 class DashboardController < ApplicationController
-  before_action :login_required
+  before_action :admin_required
   before_action :set_alerts
+  before_action :set_active_work_log, only: [:save_work_log, :finish_work_log]
 
   # GET /dashboard
   def index
@@ -68,7 +69,6 @@ class DashboardController < ApplicationController
   end
 
   def save_work_log
-    @active_work_log = WorkLog.find work_log_params[:work_log_id]
     @active_work_log.update(work_log_params.except(:work_log_id))
     if @active_work_log.valid?
       @alerts << {
@@ -87,9 +87,21 @@ class DashboardController < ApplicationController
     render 'index'
   end
 
-  def create_work_log
-    log = WorkLog.create(user: current_user, job: WorkLog::JOBS.first.first, notes: '', started: Time.now, ended: Time.now)
+  def start_work_log
+    log = WorkLog.create(user: current_user, job: WorkLog::JOBS.first.first, notes: '<ul><li></li></ul>', started: Time.now)
     redirect_to("/dashboard?work_log_id=#{log.id}&active_tab=work_log")
+  end
+
+  def finish_work_log
+    if @active_work_log.finish
+      @alerts << {
+        type: :success,
+        title: 'A job well done',
+        text: 'Now, go have some fun.'
+      }
+    end
+
+    render 'index'
   end
 
   private
@@ -98,10 +110,8 @@ class DashboardController < ApplicationController
     @alerts = []
   end
 
-  def login_required
-    if current_user.nil?
-      redirect_to('/login')
-    end
+  def set_active_work_log
+    @active_work_log = WorkLog.find(params[:work_log_id])
   end
 
   def short_post_params
@@ -113,6 +123,6 @@ class DashboardController < ApplicationController
   end
 
   def work_log_params
-    params.permit(:work_log_id, :job, :notes, :started, :ended)
+    params.permit(:work_log_id, :job, :notes, :started, :ended, :billed)
   end
 end

@@ -1,0 +1,25 @@
+<br/>
+<% if @work_logs.count == 0 %>
+  <p>There are no logs that have not been billed.</p>
+<% end %>
+<% @work_logs.each do |log| %>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <% if log.is_open? %>
+        <p>Work started on <%= log.started.strftime('%h %d') %></p>
+      <% else %>
+      <p><strong>Worked on
+        <%= log.started.strftime('%h %d') %>
+        from
+        <%= log.started.in_time_zone('EST').strftime('%H:%M') %>
+        to
+        <%= log.ended.in_time_zone('EST').strftime('%H:%M') %>
+        for <%= ((log.ended - log.started) / (60*60)).round(2) %> hours
+        </strong>
+      </p>
+      <% end %>
+
+      <%= log.notes.nil? ? 'no notes available' : log.notes.html_safe %>
+    </div>
+  </div>
+<% end %>

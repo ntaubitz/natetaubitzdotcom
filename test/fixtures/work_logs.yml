@@ -1,0 +1,22 @@
+this_month:
+  user: nate
+  job: mailshake
+  billed: true
+  started: <%= DateTime.now.change({hour: 1, min: 0, sec: 0})%>
+  ended: <%= DateTime.now.change({hour: 2, min: 0, sec: 0})%>
+
+last_month_first:
+  user: nate
+  job: mailshake
+  billed: true
+  started: <%= (DateTime.now.beginning_of_month - 1.month).change({hour: 1, min: 0, sec: 0})%>
+  ended: <%= (DateTime.now.beginning_of_month - 1.month).change({hour: 2, min: 0, sec: 0})%>
+  notes: worked for an hour
+
+last_month_second:
+  user: nate
+  job: mailshake
+  billed: true
+  started: <%= (DateTime.now.beginning_of_month - 1.month + 1.day).change({hour: 3, min: 0, sec: 0})%>
+  ended: <%= (DateTime.now.beginning_of_month - 1.month + 1.day).change({hour: 5, min: 0, sec: 0})%>
+  notes: worked for 2 hours

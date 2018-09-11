@@ -62,7 +62,10 @@ class PagesController < ApplicationController
     else
       if user.authenticate(login_params[:password])
         set_current_user(user)
-        redirect_to('/dashboard')
+        url = '/'
+        url = '/reports' if user.belongs_to?(:report_viewer)
+        url = '/dashboard' if user.is_admin?
+        redirect_to(url)
         return
       else
         @errors << {not_authenticated: 'Either your email or password was incorrect'}

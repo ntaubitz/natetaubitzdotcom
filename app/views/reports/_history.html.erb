@@ -1,0 +1,36 @@
+<br/>
+<% if @history.count == 0 %>
+  <p>There is no history to show.</p>
+<% end %>
+<% @history.each_with_index do |entry, index| %>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="row">
+        <div class="col col-sm-2">
+          <%= entry[:period_begin].strftime('%h %Y') %>
+        </div>
+        <div class="col col-sm-2">
+          <%= entry[:billed_hours] %> billable hours
+        </div>
+        <div class="col col-sm-8">
+          <% if @show_notes_index == index %>
+            <a href="/reports?active_tab=history">hide notes</a>
+          <% else %>
+            <a href="/reports?active_tab=history&show_notes_index=<%=index%>">show notes</a>
+          <% end %>
+        </div>
+      </div>
+      <% if @show_notes_index == index %>
+        <hr/>
+        <% entry[:logs].each do |log| %>
+          <div>
+            <small><strong><%= log.started.strftime('%h %d %H:%M') %> to  <%= log.ended.strftime('%h %d %H:%M') %></strong></small>
+            <br/><br/>
+            <%= log.notes.html_safe %>
+
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+<% end %>

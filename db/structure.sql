@@ -34,7 +34,7 @@ CREATE TABLE `blog_posts` (
   `category` enum('software_development','family','health','jeeps') DEFAULT 'software_development',
   PRIMARY KEY (`id`),
   KEY `index_blog_posts_on_user_id` (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=879965342 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `group_permissions`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -91,7 +91,7 @@ CREATE TABLE `short_posts` (
   `updated_at` datetime NOT NULL,
   PRIMARY KEY (`id`),
   KEY `index_short_posts_on_user_id` (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `user_groups`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -118,7 +118,7 @@ CREATE TABLE `users` (
   `salt` varchar(255) DEFAULT NULL,
   `crypted_password` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=86234914 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `work_logs`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -132,9 +132,10 @@ CREATE TABLE `work_logs` (
   `notes` text,
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL,
+  `billed` tinyint(1) DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `index_work_logs_on_user_id` (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=754787873 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -157,6 +158,7 @@ INSERT INTO `schema_migrations` (version) VALUES
 ('20180812172900'),
 ('20180815194500'),
 ('20180817113100'),
-('20180907111300');
+('20180907111300'),
+('20180911141400');
 
 

@@ -38,19 +38,32 @@
         </div>
 
         <div class="row">
-          <div class="col col-sm-12 text-right">
+          <div class="col col-sm-6">
+            <input type="checkbox" class="form-check-input" id="billed" name="billed" <%= @active_work_log.billed ? 'checked' : '' %>>
+            <label class="form-check-label" for="billed">billed</label><br/>
+          </div>
+          <div class="col col-sm-6 text-right">
             <button type="submit" class="btn btn-primary">Save</button>
           </div>
         </div>
       <% end %>
     <% else %>
-      <a href="/dashboard/create_work_log">create a log</a>
+      <a class="btn btn-success" href="/dashboard/start_work_log">start</a>
     <% end %>
   </div>
   <div class="col col-sm-12 col-md-6">
-    <h4>Recent</h4>
-    <% current_user.work_logs.most_recent(10).each do |log| %>
-      <a href="/dashboard/?work_log_id=<%= log.id %>&active_tab=work_log"><%= log.job %>: <%= log.started.nil? ? 'none' : log.started.strftime('%m/%d %H:%M') %></a><br/>
+    <% if WorkLog.not_finished.count > 0 %>
+      <h4>Open</h4>
+      <% current_user.work_logs.not_finished.each do |log| %>
+        <a href="/dashboard/?work_log_id=<%= log.id %>&active_tab=work_log"><%= log.job %>: <%= log.started.nil? ? 'none' : log.started.strftime('%m/%d %H:%M') %></a>
+        <a href="/dashboard/finish_work_log?work_log_id=<%= log.id %>&active_tab=work_log" class="btn btn-sm btn-danger">close</a><br/>
+      <% end %>
+    <% end %>
+    <% if current_user.work_logs.finished.most_recent(10).count > 0 %>
+      <h4>Recent</h4>
+      <% current_user.work_logs.finished.most_recent(10).each do |log| %>
+        <a href="/dashboard/?work_log_id=<%= log.id %>&active_tab=work_log"><%= log.job %>: <%= log.started.nil? ? 'none' : log.started.strftime('%m/%d %H:%M') %></a><br/>
+      <% end %>
     <% end %>
   </div>
 </div>

@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get '/dashboard' => 'dashboard#index'
   get '/blog' => 'pages#blog'
   get '/vue' => 'pages#vue'
+  get '/reports' => 'reports#index'
 
 
   post '/dashboard/create_short_post' => 'dashboard#create_short_post'
@@ -20,6 +21,7 @@ Rails.application.routes.draw do
   resources :short_posts
   resources :work_logs
 
-  get '/dashboard/create_work_log' => 'dashboard#create_work_log'
+  get '/dashboard/start_work_log' => 'dashboard#start_work_log'
+  get '/dashboard/finish_work_log' => 'dashboard#finish_work_log'
   post '/dashboard/save_work_log' => 'dashboard#save_work_log'
 end

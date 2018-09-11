@@ -85,10 +85,15 @@
             <li class="<%= 'active' if @active_page == 'overview' %>">
               <a href="/">overview</a>
             </li>
-            <% unless current_user.nil? %>
+            <% if !current_user.nil? && current_user.is_admin? %>
             <li class="<%= 'active' if @active_page == 'dashboard' %>">
               <a href="/dashboard">dashboard</a>
             </li>
+            <% end %>
+            <% if !current_user.nil? && current_user.belongs_to?(:report_viewer) %>
+              <li class="<%= 'active' if @active_page == 'reports' %>">
+                <a href="/reports">reports</a>
+              </li>
             <% end %>
             <li class="<%= 'active' if @active_page == 'code' %>">
               <a href="/code">code</a>

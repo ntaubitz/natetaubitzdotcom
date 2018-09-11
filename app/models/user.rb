@@ -14,7 +14,13 @@ class User < ApplicationRecord
 
   scope :by_email, -> (email) {where(email: email)}
 
+  def belongs_to?(group)
+    return true if self.is_admin?
+    groups.select{|g| g.name == group.to_s}.count > 0
+  end
+
   def can?(permission)
+    return true if self.is_admin?
     permissions.include? permission
   end
 
