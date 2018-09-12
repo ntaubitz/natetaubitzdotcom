@@ -108,6 +108,9 @@
           </ul>
           <% unless current_user.nil? %>
           <ul class="nav navbar-nav navbar-right">
+            <li class="<%= 'active' if @active_page == 'settings' %>">
+              <a href="/settings">settings</a>
+            </li>
             <li>
               <a href="/logout">logout</a>
             </li>

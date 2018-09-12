@@ -11,17 +11,23 @@ Rails.application.routes.draw do
   get '/blog' => 'pages#blog'
   get '/vue' => 'pages#vue'
   get '/reports' => 'reports#index'
-
-
-  post '/dashboard/create_short_post' => 'dashboard#create_short_post'
-  get '/dashboard/create_blog_post' => 'dashboard#create_blog_post'
-  post '/dashboard/save_blog_post' => 'dashboard#save_blog_post'
+  get '/settings' => 'settings#index'
   get '/logout' => 'pages#logout'
 
-  resources :short_posts
-  resources :work_logs
+  # Settings
+  post '/settings/change_password' => 'settings#change_password'
 
+  # Short Posts
+  resources :short_posts
+  post '/dashboard/create_short_post' => 'dashboard#create_short_post'
+
+  # Work Logs
+  resources :work_logs
   get '/dashboard/start_work_log' => 'dashboard#start_work_log'
   get '/dashboard/finish_work_log' => 'dashboard#finish_work_log'
   post '/dashboard/save_work_log' => 'dashboard#save_work_log'
+
+  # Blog Posts
+  get '/dashboard/create_blog_post' => 'dashboard#create_blog_post'
+  post '/dashboard/save_blog_post' => 'dashboard#save_blog_post'
 end

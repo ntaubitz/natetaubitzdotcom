@@ -1,0 +1,12 @@
+<% @active_page = 'settings' %>
+<h4><%= current_user.email %></h4>
+<ul class="nav nav-tabs">
+  <li class="nav-item active">
+    <a class="nav-link active"
+       href="/settings?active_tab=security">security</a>
+  </li>
+</ul>
+<br/>
+<% if @active_tab == :security%>
+  <%= render "security" %>
+<% end %>

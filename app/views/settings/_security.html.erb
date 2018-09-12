@@ -1,0 +1,38 @@
+<%= form_tag('/settings/change_password', name: 'security') do %>
+  <div class="row">
+    <div class="col col-sm-12 col-md-5">
+      <% @alerts.each do |alert| %>
+        <div class="alert alert-<%= alert[:type] %>" role="alert">
+          <strong><%= alert[:title] %></strong> <%= alert[:text] %>.
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col col-sm-12 col-md-3">
+      <div class="form-group">
+        <label for="current_password">current password</label>
+        <input type="password" class="form-control" id="current_password" name="current_password">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col-sm-12 col-md-3">
+      <div class="form-group">
+        <label for="new_password">new password</label>
+        <input type="password" class="form-control" id="new_password" name="new_password">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col-sm-12 col-md-3">
+      <div class="form-group">
+        <label for="confirm_password">confirm new password</label>
+        <input type="password" class="form-control" id="confirm_password" name="confirm_password">
+      </div>
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary">change</button>
+<% end %>

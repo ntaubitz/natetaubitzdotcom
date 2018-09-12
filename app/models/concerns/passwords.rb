@@ -12,6 +12,16 @@ module Passwords
     self.crypted_password == encrypt(password, self.salt)
   end
 
+  def change_password(params)
+    potential_password = encrypt(params[:current_password], self.salt)
+    return :invalid_current_password unless potential_password == self.crypted_password
+    return :confirmation_invalid if params[:new_password] != params[:confirm_password]
+    self.password = params[:new_password]
+    return :password_invalid unless self.save
+    ApplicationMailer.new.password_changed(self)
+    :success
+  end
+
   def encrypt_password
     return if password.blank?
     self.salt = new_sha_hex if new_record?
