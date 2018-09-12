@@ -2,47 +2,46 @@
   @active_page = 'contact'
   @page_title = 'Nathan Taubitz: Contact Me'
 %>
-<div class="container">
-  <h2>contact</h2>
-  <p>
-    i communicate in many ways, most of which i don't make publicly available.
-    Check out my LinkedIn profile or send me a note below and i'll respond as soon as possible.
-  </p>
-  <p>
-    If you are looking for a resume, please direct contact me and explain what you are looking
-    for so that i can get you the correct resume.
-  </p>
-  <h4>LinkedIn</h4>
-  <p>
-    Check out my profile at
-    <a href="http://www.linkedin.com/in/nathan-taubitz" target="_blank">www.linkedin.com/in/nathan-taubitz</a>
-  </p>
-  <% unless @show_contact_alert %>
-    <h4>direct contact</h4>
-  <% end %>
-  <div class="container">
-    <div class="row">
-      <div class="col col-sm-12 col-lg-4">
-        <% unless @show_contact_alert %>
-          <%= form_tag  do %>
-            <div class="form-group">
-              <label for="email">email address</label>
-              <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="enter email">
-              <small id="emailHelp" class="form-text text-muted">i'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-              <label for="note">tell me your thoughts...</label>
-              <textarea class="form-control" rows="5" id="note" name="note"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          <% end %>
-        <% end %>
-        <% if @show_contact_alert %>
-          <div class="alert alert-success">
-            <strong>Awww!</strong> Thanks, i'll get back with you as soon as humanly possible.
-          </div>
-        <% end %>
+<div class="row">
+  <div class="col col-md-4">
+    <h4>contacting me</h4>
+    <p>
+      i communicate in many ways, most of which i don't make publicly available.
+      Check out my LinkedIn profile or send me a note below and i'll respond as soon as possible.
+    </p>
+    <p>
+      If you are looking for a resume, please direct contact me and explain what you are looking
+      for so that i can get you the correct resume.
+    </p>
+  </div>
+  <div class="col col-md-4">
+    <h4>social media</h4>
+    <p>
+      Check out my LinkedIn profile at
+      <a href="http://www.linkedin.com/in/nathan-taubitz" target="_blank">www.linkedin.com/in/nathan-taubitz</a>
+    </p>
+  </div>
+  <div class="col col-md-4">
+    <% if @show_contact_alert %>
+      <div class="alert alert-success">
+        <strong>Awww!</strong> Thanks, i'll get back with you as soon as humanly possible.
       </div>
-    </div>
+    <% end %>
+
+    <% unless @show_contact_alert %>
+      <h4>direct contact</h4>
+      <%= form_tag  do %>
+        <div class="form-group">
+          <label for="email">email address</label>
+          <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="enter email">
+          <small id="emailHelp" class="form-text text-muted">i'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="note">tell me your thoughts...</label>
+          <textarea class="form-control" rows="5" id="note" name="note"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      <% end %>
+    <% end %>
   </div>
 </div>

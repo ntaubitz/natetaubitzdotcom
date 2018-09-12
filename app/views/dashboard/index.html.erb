@@ -3,43 +3,36 @@
   @page_title = 'Dashboard'
 %>
 
-<div class="container">
-  <ul class="nav nav-tabs">
-    <li class="nav-item <%= @active_tab == :short_posts ? 'active' : '' %>">
-      <a class="nav-link <%= @active_tab == :short_posts ? 'active' : '' %>"
-         href="/dashboard?active_tab=short_posts">short posts</a>
-    </li>
-    <li class="nav-item <%= @active_tab == :blog_posts ? 'active' : '' %>">
-      <a class="nav-link <%= @active_tab == :blog_posts ? 'active' : '' %>"
-         href="/dashboard?active_tab=blog_posts">blog posts</a>
-    </li>
-    <li class="nav-item <%= @active_tab == :work_log ? 'active' : '' %>">
-      <a class="nav-link <%= @active_tab == :work_log ? 'active' : '' %>"
-         href="/dashboard?active_tab=work_log">work log</a>
-    </li>
-  </ul>
+<ul class="nav nav-tabs">
+  <li class="nav-item <%= @active_tab == :short_posts ? 'active' : '' %>">
+    <a class="nav-link <%= @active_tab == :short_posts ? 'active' : '' %>"
+       href="/dashboard?active_tab=short_posts">short posts</a>
+  </li>
+  <li class="nav-item <%= @active_tab == :blog_posts ? 'active' : '' %>">
+    <a class="nav-link <%= @active_tab == :blog_posts ? 'active' : '' %>"
+       href="/dashboard?active_tab=blog_posts">blog posts</a>
+  </li>
+  <li class="nav-item <%= @active_tab == :work_log ? 'active' : '' %>">
+    <a class="nav-link <%= @active_tab == :work_log ? 'active' : '' %>"
+       href="/dashboard?active_tab=work_log">work log</a>
+  </li>
+</ul>
 
-  <div class="row">
-    <br/>
-    <div class="col col-sm-12 col-md-6">
-      <% @alerts.each do |alert| %>
-        <div class="alert alert-<%= alert[:type] %>" role="alert">
-          <strong><%= alert[:title]%></strong> <%= alert[:text]%>.
-        </div>
-      <% end %>
-    </div>
+<div class="row">
+  <br/>
+  <div class="col col-sm-12 col-md-6">
+    <% @alerts.each do |alert| %>
+      <div class="alert alert-<%= alert[:type] %>" role="alert">
+        <strong><%= alert[:title]%></strong> <%= alert[:text]%>.
+      </div>
+    <% end %>
   </div>
-
-  <% if @active_tab == :short_posts %>
-    <%= render "short_posts" %>
-  <% elsif @active_tab == :blog_posts %>
-    <%= render "blog_posts" %>
-  <% else %>
-    <%= render "work_logs" %>
-  <% end %>
-
-
-
-
-
 </div>
+
+<% if @active_tab == :short_posts %>
+  <%= render "short_posts" %>
+<% elsif @active_tab == :blog_posts %>
+  <%= render "blog_posts" %>
+<% else %>
+  <%= render "work_logs" %>
+<% end %>

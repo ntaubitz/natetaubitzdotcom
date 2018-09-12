@@ -1,22 +1,20 @@
 <% @active_page = 'reports' %>
-<div class="container">
-  <% if current_user.can?(:report_work_log) %>
-    <h4>work log</h4>
-    <ul class="nav nav-tabs">
-      <li class="nav-item <%= @active_tab == :unbilled ? 'active' : '' %>">
-        <a class="nav-link <%= @active_tab == :unbilled ? 'active' : '' %>"
-           href="/reports?active_tab=unbilled">not billed</a>
-      </li>
-      <li class="nav-item <%= @active_tab == :history ? 'active' : '' %>">
-        <a class="nav-link <%= @active_tab == :history ? 'active' : '' %>"
-           href="/reports?active_tab=history">history</a>
-      </li>
-    </ul>
-  <% end %>
+<% if current_user.can?(:report_work_log) %>
+  <h4>work log</h4>
+  <ul class="nav nav-tabs">
+    <li class="nav-item <%= @active_tab == :unbilled ? 'active' : '' %>">
+      <a class="nav-link <%= @active_tab == :unbilled ? 'active' : '' %>"
+         href="/reports?active_tab=unbilled">not billed</a>
+    </li>
+    <li class="nav-item <%= @active_tab == :history ? 'active' : '' %>">
+      <a class="nav-link <%= @active_tab == :history ? 'active' : '' %>"
+         href="/reports?active_tab=history">history</a>
+    </li>
+  </ul>
+<% end %>
 
-  <% if @active_tab == :unbilled %>
-    <%= render "unbilled" %>
-  <% else %>
-    <%= render "history" %>
-  <% end %>
-</div>
+<% if @active_tab == :unbilled %>
+  <%= render "unbilled" %>
+<% else %>
+  <%= render "history" %>
+<% end %>
