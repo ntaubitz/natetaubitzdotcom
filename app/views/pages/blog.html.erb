@@ -2,7 +2,7 @@
 
 <div class="row">
   <div class="col col-sm-12">
-    <span>I blog about:</span>
+    <span>i blog about:</span>
     <a class="blog-nav <%= params[:category] == 'software_development' ? 'active' : '' %>" href="?category=software_development">Software Development</a> |
     <a class="blog-nav <%= params[:category] == 'jeeps' ? 'active' : '' %>" href="?category=jeeps">Jeeps</a> |
     <a class="blog-nav <%= params[:category] == 'family' ? 'active' : '' %>" href="?category=family">Family</a> |
@@ -24,7 +24,7 @@
   </div>
   <div class="blog col-md-9 ml-sm-auto col-lg-10 px-4">
     <h2><%= @active_blog_post.subject %></h2>
-    <%= @active_blog_post.markup.html_safe %>
+    <%= @active_blog_post.markup_for_display.html_safe %>
     <small>Posted: <%= @active_blog_post.created_at.strftime('%B %d %Y') %></small>
   </div>
 </div>

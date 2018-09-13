@@ -10,13 +10,15 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react_ujs": "^2.4.4",
-    "ts-loader": "3.5.0",
-    "typescript": "^3.0.1",
     "vue": "^2.5.17",
     "vue-loader": "14.2.2",
     "vue-template-compiler": "^2.5.17"
   },
   "devDependencies": {
+    "ts-loader": "^3.5.0",
+    "typescript": "^3.0.3",
+    "vue-class-component": "^6.2.0",
+    "vue-property-decorator": "^7.0.0",
     "webpack-dev-server": "2.11.2"
   }
 }

@@ -12,3 +12,8 @@ long_multiple_tags:
   user: nate
   subject: long post
   markup: <h1>long post</h1><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p><p>truncate me. </p>
+
+encoded_code_tag:
+  user: nate
+  subject: html encoded
+  markup: <p>encoded</p><div><div><pre><code><div>foo</div></code></pre></div></div>

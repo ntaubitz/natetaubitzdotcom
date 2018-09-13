@@ -42,4 +42,20 @@ class BlogPost < ApplicationRecord
     end
     markup
   end
+
+  def markup_for_display
+    doc = Nokogiri::HTML.fragment(markup)
+    encode_fragment doc
+    doc.to_html
+  end
+
+  def encode_fragment(doc)
+    doc.children.each do |child|
+      if child.name.to_sym == :code
+        child.inner_html = CGI::escapeHTML child.inner_html
+      else
+        encode_fragment(child)
+      end
+    end
+  end
 end

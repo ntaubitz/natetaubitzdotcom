@@ -2,5 +2,10 @@
   &.body {
     max-width: 960px;
   }
+}
 
+.container {
+  &.content {
+    max-width: 930px;
+  }
 }

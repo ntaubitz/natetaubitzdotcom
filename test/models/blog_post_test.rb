@@ -15,4 +15,9 @@ class BlogPostTest < ActiveSupport::TestCase
     long_blog = blog_posts(:long_one_tag)
     assert 838 == long_blog.short_markup.length
   end
+
+  test 'code blocks are html encoded for display in a web page' do
+    post = blog_posts(:encoded_code_tag)
+    assert '<p>encoded</p><div><div><pre><code>&lt;div&gt;foo&lt;/div&gt;</code></pre></div></div>' == post.markup_for_display
+  end
 end
