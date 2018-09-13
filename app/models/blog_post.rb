@@ -43,6 +43,12 @@ class BlogPost < ApplicationRecord
     markup
   end
 
+  def short_markup_for_display
+    doc = Nokogiri::HTML.fragment(short_markup)
+    encode_fragment doc
+    doc.to_html
+  end
+
   def markup_for_display
     doc = Nokogiri::HTML.fragment(markup)
     encode_fragment doc

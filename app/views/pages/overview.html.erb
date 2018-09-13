@@ -43,7 +43,10 @@
     <div class="col-md-4">
       <h2>blog</h2>
 
-      <%= @most_recent_blog_post.short_markup.html_safe %>
+      <%= @most_recent_blog_post.short_markup_for_display.html_safe %>
+      <script type="application/javascript">
+          $('pre code').each(function(i, block) {hljs.highlightBlock(block);})
+      </script>
       <small>Posted: <%= @most_recent_blog_post.created_at.strftime('%B %d %Y') %></small>
       <br/>
       <br/>
