@@ -49,4 +49,8 @@ class WorkLog < ApplicationRecord
     end
     history
   end
+
+  def self.unbilled_hours(job)
+    WorkLog.for_job(job).finished.billed(false).collect{|wl| wl.hours_logged}.sum
+  end
 end
