@@ -51,6 +51,21 @@ class WorkLog < ApplicationRecord
   end
 
   def self.unbilled_hours(job)
-    WorkLog.for_job(job).finished.billed(false).collect{|wl| wl.hours_logged}.sum
+    WorkLog.unbilled_work(job).collect{|wl| wl.hours_logged}.sum
+  end
+
+  def self.unbilled_work(job)
+    WorkLog.for_job(job).finished.billed(false)
+  end
+
+  def self.bill_hours(job)
+    results = {
+        billed_hours: WorkLog.unbilled_hours(job)
+    }
+    WorkLog.unbilled_work(job).each do |work_log|
+      work_log.billed = true
+      work_log.save
+    end
+    results
   end
 end
