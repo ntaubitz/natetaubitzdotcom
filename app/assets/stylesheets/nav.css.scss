@@ -21,9 +21,16 @@ nav.navbar {
             background-color: $color-medium-blue;
             a {
               background: none;
+              color: $color-black;
+            }
+          }
+          &:hover {
+            a {
+              color: $color-black;
             }
           }
           a {
+            color: $color-grey-blue;
           }
         }
       }
@@ -34,7 +41,7 @@ nav.navbar {
 .list-group {
   .list-group-item {
     &.active {
-      color: $color-black;
+      color: $color-white;
       background-color: $color-light-blue;
       background-image: none;
       border-color: $color-medium-blue;
@@ -45,7 +52,7 @@ nav.navbar {
 
 a.blog-nav {
   &.active {
-    color: $color-black;
+    color: $color-white;
     font-weight: 500;
   }
 }

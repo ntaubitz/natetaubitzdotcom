@@ -1,3 +1,5 @@
+require 'github/markup'
+
 class BlogPost < ApplicationRecord
   CATEGORIES = {
     software_development: 'software_development',
@@ -21,47 +23,35 @@ class BlogPost < ApplicationRecord
   # get an introduction or shortened blog post
   def short_markup
     if markup.length > 812
-      # remove all the body children tags except the first p tag
-      doc = Nokogiri::HTML.fragment(markup)
-      first_p = nil
-      doc.children.each do |child|
-        if child.name == 'p'
-          unless first_p.nil?
-            child.remove
-          else
-            first_p = child
-          end
+      index = 0
+      lines_included = 0
+      while lines_included < 5 && !index.nil?
+        test_index = markup.index "\n", index + 1
+        if test_index.nil?
+          break
         end
+        index = test_index
+        lines_included += 1
       end
-
-      # if that one tag is too long, truncate the text
-      if doc.to_html.length > 812
-        first_p.content = first_p.text[0..809] + '...'
+      if index > 812
+        index = 812
       end
-      return doc.to_html
+      return markup[0..index]
     end
     markup
   end
 
   def short_markup_for_display
-    doc = Nokogiri::HTML.fragment(short_markup)
-    encode_fragment doc
-    doc.to_html
+    to_html short_markup
   end
 
   def markup_for_display
-    doc = Nokogiri::HTML.fragment(markup)
-    encode_fragment doc
-    doc.to_html
+    to_html markup
   end
 
-  def encode_fragment(doc)
-    doc.children.each do |child|
-      if child.name.to_sym == :code
-        child.inner_html = CGI::escapeHTML child.inner_html
-      else
-        encode_fragment(child)
-      end
-    end
+  private
+
+  def to_html(markdown)
+    GitHub::Markup.render_s(GitHub::Markups::MARKUP_MARKDOWN, markdown)
   end
 end

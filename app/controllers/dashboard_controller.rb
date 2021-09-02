@@ -42,7 +42,7 @@ class DashboardController < ApplicationController
   end
 
   def create_blog_post
-    post = BlogPost.create(user: current_user, subject: 'new post', markup: '<p>be positive</p>')
+    post = BlogPost.create(user: current_user, subject: 'new post', markup: '# be positive')
     redirect_to("/dashboard?blog_post_id=#{post.id}&active_tab=blog_posts")
   end
 
