@@ -34,7 +34,7 @@ CREATE TABLE `blog_posts` (
   `category` enum('software_development','family','health','jeeps') DEFAULT 'software_development',
   PRIMARY KEY (`id`),
   KEY `index_blog_posts_on_user_id` (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=879965342 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `group_permissions`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -71,6 +71,19 @@ CREATE TABLE `permissions` (
   `updated_at` datetime NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+DROP TABLE IF EXISTS `phonetics`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `phonetics` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `word_id` int DEFAULT NULL,
+  `letters` varchar(64) DEFAULT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `index_phonetics_on_word_id` (`word_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `schema_migrations`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -118,7 +131,18 @@ CREATE TABLE `users` (
   `salt` varchar(255) DEFAULT NULL,
   `crypted_password` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=86234914 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+DROP TABLE IF EXISTS `words`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `words` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `letters` varchar(64) DEFAULT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1038054165 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `work_logs`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -135,7 +159,7 @@ CREATE TABLE `work_logs` (
   `billed` tinyint(1) DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `index_work_logs_on_user_id` (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1031024277 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -159,6 +183,8 @@ INSERT INTO `schema_migrations` (version) VALUES
 ('20180815194500'),
 ('20180817113100'),
 ('20180907111300'),
-('20180911141400');
+('20180911141400'),
+('20220106042000'),
+('20220107042000');
 
 
